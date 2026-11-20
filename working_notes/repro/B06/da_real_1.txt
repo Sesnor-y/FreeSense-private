@@ -1,0 +1,17 @@
+DA (20, 12, 30, 3) rows=720 long=21600
+  clean_and_structure                           0.03
+  descriptives                                  0.11
+  attr_correlations                             0.01
+  run_da_anova                                  2.40
+  discrimination                                1.76
+  repeatability                                34.44
+  agreement                                     0.88
+  scale_usage                                   0.04
+  generate_cld                                 57.74
+  TOTAL run_full_da_analysis (+clean)          97.41
+  [S5] calculate_pca                            0.04
+  [S5] run_cva                                  0.03
+  [S5] panel_stability fixed                    0.78
+  [S7] compute_da_diagnostics                   2.22
+  [S6] summarise_assessor_performance           7.96
+  cache-hit clean+anova                         0.06

@@ -1,0 +1,10 @@
+    clean_and_structure: 0.07s
+    _run_full_cata_pipeline: 10.89s
+    build_cata_liking_long: 0.01s
+  TOTAL step1: 10.97s
+    [S5] cata contrast: 9.76s
+    [S6] compute_ca: 0.00s
+    [S6] compute_ca_ellipses: 0.28s
+    [S6] ellipses other dims (bootstrap cached): 0.02s
+    [S7] penalty: 0.93s
+CATA (500, 12, 60) rows=6000 long=360000 kept=60

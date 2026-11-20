@@ -1,0 +1,200 @@
+2026-09-26 18:03:02.172 Uncaught app execution
+Traceback (most recent call last):
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 909, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/app.py", line 88, in <module>
+    getattr(importlib.import_module(mod_path), fn_name)()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/modules/descriptive/workflow.py", line 2541, in render_module_content
+    STEP_RENDERERS[current_step]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/modules/descriptive/workflow.py", line 393, in render_step_1
+    results = run_full_da_analysis(df_long, col_map_run, alpha, post_hoc_method, alpha_interaction=alpha_interaction)
+  File "/var/home/Lukas/Projects/RATA-Flow-App/modules/descriptive/workflow.py", line 76, in run_full_da_analysis
+    results['da_scale_df'] = st_perf.compute_scale_usage(df_long, col_map)
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/caching/cache_utils.py", line 705, in __call__
+    return self._get_or_create_cached_value(args, kwargs, spinner_message)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/caching/cache_utils.py", line 761, in _get_or_create_cached_value
+    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/caching/cache_utils.py", line 823, in _handle_cache_miss
+    computed_value = self._info.func(*func_args, **func_kwargs)
+  File "/var/home/Lukas/Projects/RATA-Flow-App/stats/panel_performance.py", line 551, in compute_scale_usage
+    robust_normalise(scale_df['mean_bias'],          'mean_bias', 'bias')
+                     ~~~~~~~~^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pandas/core/indexes/range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'mean_bias'
+
+########## Descriptive :: small.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 2.3s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+--- Descriptive step 2 '2. Product discrimination' (0.2s)
+[Descriptive-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+--- Descriptive step 3 '3. Attribute overview' (0.1s)
+[Descriptive-3] exc=0 err=0 warn=0 info=0 charts=4 dfs=2 step=3
+--- Descriptive step 4 '4. Contrast analysis' (0.2s)
+[Descriptive-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=4
+--- Descriptive step 5 '5. Product mapping' (0.1s)
+[Descriptive-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- Descriptive step 6 '6. Panel performance' (0.8s)
+[Descriptive-6] exc=0 err=0 warn=0 info=0 charts=18 dfs=3 step=6
+--- Descriptive step 7 '7. Diagnostics' (0.4s)
+[Descriptive-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=7
+  EXPORT DA: 47025 bytes, sheets=['Descriptives', 'Means_Wide', 'ANOVA_Summary', 'ANOVA_Full', 'PostHoc_Pairwise', 'Perf_Discrimination', 'Perf_Repeatability', 'Perf_Agreement', 'Perf_GlobalAgreement', 'Perf_ScaleUsage', 'Perf_Panel', 'Perf_Summary', 'Perf_Training', 'Correlations', 'Contrast Analysis', 'Raw_Data', 'Run_Parameters']
+--- Descriptive step 8 '8. Results & export' (0.3s)
+[Descriptive-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8
+
+########## Descriptive :: eu_comma_quoted.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **480 blank cells detected** across 5 attribute columns. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style dat
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 0.4s
+[ran] exc=1 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  EXCEPTION: 'mean_bias' | 'mean_bias'
+    File "/var/home/Lukas/Projects/RATA-Flow-App/modules/descriptive/workflow.py", line 2541, in render_module_content
+    STEP_RENDERERS[current_step]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+    File "/var/home/Lukas/Projects/RATA-Flow-App/modules/descriptive/workflow.py", line 393, in render_step_1
+    results = run_full_da_analysis(df_long, col_map_run, alpha, post_hoc_method, alpha_interaction=alpha_interaction)
+    File "/var/home/Lukas/Projects/RATA-Flow-App/modules/descriptive/workflow.py", line 76, in run_full_da_analysis
+    results['da_scale_df'] = st_perf.compute_scale_usage(df_long, col_map)
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+    File "/var/home/Lukas/Projects/RATA-Flow-App/stats/panel_performance.py", line 551, in compute_scale_usage
+    robust_normalise(scale_df['mean_bias'],          'mean_bias', 'bias')
+                     ~~~~~~~~^^^^^^^^^^^^^
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pandas/core/indexes/range.py", line 417, in get_loc
+    raise KeyError(key)
+  WARNING: **480 blank cells detected** across 5 attribute columns. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style dat
+
+########## Descriptive :: text_cells.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **3 blank cells detected** across 1 attribute column. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style data c
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 4.4s
+[ran] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **3 blank cells detected** across 1 attribute column. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style data c
+
+########## Descriptive :: extra_cols.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel', 'Comment', 'Date']
+[mapped] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **192 blank cells detected** across 2 attribute columns. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style dat
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=7
+  metric Replicates=2
+  run 6.7s
+[ran] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **192 blank cells detected** across 2 attribute columns. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style dat
+
+########## Descriptive :: dup_rows.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 4.7s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+
+########## Descriptive :: special_levels.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 6.3s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+
+########## Descriptive :: weird_attrs.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'Sweet+Sour', 'a ~ b', 'Bitter:after', '1st taste (x)', 'LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 6.9s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+
+########## Descriptive :: collide.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'Sweet', 'Sweet.1', 'sweet', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 5.2s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+
+########## Descriptive :: numeric_codes.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 3.7s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+
+########## Descriptive :: no_product.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=1 info=0 charts=0 dfs=2 step=1
+  WARNING: No replicate column mapped. Within-assessor repeatability metrics will be unavailable. Replicates are strongly recommended for DA.
+  metric Assessors=12
+  metric Products=2
+  metric Attributes=5
+  metric Replicates=—
+  run 0.9s
+[ran] exc=0 err=0 warn=1 info=0 charts=0 dfs=2 step=1
+  WARNING: No replicate column mapped. Within-assessor repeatability metrics will be unavailable. Replicates are strongly recommended for DA.
+
+########## Descriptive :: nan_product.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 6.0s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+[eu_semicolon.csv upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist;Session;Product;CocoaA;MilkA;CocoaF;MilkF;Caramel']
+[tab.csv upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist\tSession\tProduct\tCocoaA\tMilkA\tCocoaF\tMilkF\tCaramel']
+[title_row.csv upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Study XYZ export 2026']

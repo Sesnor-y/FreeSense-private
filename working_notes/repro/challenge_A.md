@@ -1,0 +1,97 @@
+### STAT-01: Cluster ANOVA tests the partition it was built from, so "significant" stars appear on pure noise
+- Severity claimed: HIGH
+- Location: `stats/segmentation.py:57-93` (`_cluster_anova`), called from `compute_ahc_clusters` (l.211) and `compute_kmeans_clusters`; rendered as ★ markers by `modules/liking/workflow.py:114-139` (`_cluster_profile_caption`), l.1505-1540 (AHC tab) and the k-means tab.
+- Evidence: the one-way ANOVA per product compares the clusters on the same liking scores the clusters were formed from. Script `t_seg.py`: 20 datasets of 100 consumers x 6 products, iid N(6, 1.5) rounded to 1 to 9, no segment structure. AHC (Ward, k = 2, raw scores) flagged `[5, 4, 3, 5, 3, 5, 3, 3, 3, 4, 4, 5, 4, 6, 5, 5, 4, 3, 4, 2]` of 6 products significant at alpha = 0.05. A valid test would flag about 0.3 per dataset. The caption says "★ = product liking differs significantly across segments (one-way ANOVA on raw scores, p < α)" with no caveat; `Statistical_Methods_README.md` (around l.1610) presents the ANOVA as the test of absolute level without mentioning selection.
+
+### STAT-02: Liking contrast uses df = n_consumers - n_products, disagreeing with the CLD and with the correct RCBD df
+- Severity claimed: HIGH
+- Location: `stats/liking.py:289-290` (`df_satterthwaite = max(1, n_c - n_p)`); consumed by `stats/contrast.py:292-312` (Liking contrast p-value, CI, HSD critical value, Hedges' J) and `stats/contrast.py:628-640` (FDR family); `compute_liking_cld` (`stats/liking.py:786-814`) instead uses a per-pair Welch formula.
+- Evidence (`t_lik.py`): balanced synthetic panels, 10 consumers x 6 products. The contrast uses df = 4; the CLD uses per-pair df of about 2(n-1) = 18; the correct residual df of the balanced RCBD (equal to lme4/emmeans Satterthwaite on complete data) is (10-1)(6-1) = 45. The SEs agree exactly (LMM 0.5193 vs RCBD 0.5193), so only the df differs. P2 vs P5: p = 0.0255 at df 45 against 0.0820 in the contrast. Across 30 datasets x 3 post-hoc methods x all reference/comparison pairs, the contrast's significance disagreed with the CLD letters in **442 of 2700** comparisons (16%). When n_consumers <= n_products + 1 the df floors at 1, and the Hedges' g correction `J = 1 - 3/(4·df - 1)` becomes 0, so g is reported as 0 for every pair. The hedochoc validation cannot catch this because at 222 consumers every df choice gives the same decisions.
+- Evidence: 
+
+### STAT-03: RATA Tukey contrast uses a different error term from the RATA Tukey CLD
+- Severity claimed: HIGH
+- Location: `stats/contrast.py:447-491` (RATA path: paired SE, df = n-1, studentized range with k_total) against `stats/posthoc.py:177-258` (`_rcbd_tukey_decisions`: pooled RCBD residual MS, df (J-1)(P-1)); docstring `stats/contrast.py:23-24` claims flags always match `generate_cld()`.
+- Evidence (`t_cons.py`, sensochoc run as RATA, all 6 references x 5 comparisons x significant attributes, 420 pairs): Tukey had **16 mismatches** between contrast `significant` and the pairwise/CLD `Reject H0`, in both directions. Examples: MilkF choc1 vs choc2, CLD adj p = 0.163 (not significant), contrast significant; Sticky choc1 vs choc3, CLD adj p = 0.016 (significant), contrast not significant. FDR and LSD had 0 mismatches for RATA. DA had 0 mismatches for all three methods.
+- Evidence: 
+
+### STAT-04: PLS CV Q² collapses when a predictor is constant inside a training fold (in-fold scaling divides by ~1e-17)
+- Severity claimed: HIGH (beta module)
+- Location: `stats/pls.py:325-331` (`x_sd = np.where(np.isfinite(x_sd) & (x_sd > 0), x_sd, 1.0)`, same for `y_sd`), used by Q², permutation test and bootstrap CI.
+- Evidence (`t_pls.py`, `t_pls2.py`): n = 8 products, 4 predictors, one predictor non-zero in a single product (for example an ingredient in only one recipe). After global autoscaling, the LOO fold that omits that product has a column whose in-fold SD is 6.0e-17, not 0, so the guard passes and the column is multiplied by ~1e16. Over 20 seeds, `fit_pls(...)['q2']` against an independent LOO: seed 4 gives -14.519 vs 0.889, seed 9 gives -11.046 vs 0.560, seed 2 gives -2.547 vs 0.733 (median absolute difference 0.46). Changing only the guard to `> 1e-10` reproduces the independent values exactly for every seed. No warning is raised: the per-fold effective-rank cap sees a full-rank scaled matrix.
+- Evidence: 
+
+### FUNC-01: Liking LS means silently wrong when a product name contains "Var" or "Cov"
+- Severity claimed: BLOCKER
+- Location: `stats/liking.py:258-261` (`compute_liking_lmm`)
+- Evidence: fixed-effect parameters are selected with `if 'Var' not in p and 'Cov' not in p`. The parameter names include the product label (`C(_product)[T.Variety A]`), so a product whose name contains "Var" or "Cov" is dropped from the fixed-effect design matrix and gets the intercept (the reference product's mean) as its LS mean. Reproduction: `scratchpad/agents/B02/liking_var.py` renames hedochoc `choc1..6` to `Variety A, Variety B, Covent, Plain, Dark, Milk`:
+  ```
+  product   ls_mean   (raw mean)
+  Covent    5.765766  5.765766
+  Variety A 5.765766  5.328829   <- wrong, equals the reference
+  Variety B 5.765766  5.689189   <- wrong
+  ```
+  The same data with names `choc1..6` gives the correct 5.3288 / 5.6892. `cov_lsmeans` is built from the same matrix, so standard errors, CLD letters and contrasts that consume it are also wrong. The UI path (Liking Step 1 "Run full analysis") calls this function (`run_liking.py`, `variety.csv`, ran with no warning). No error or warning is shown.
+
+### FUNC-02: DA crashes with a raw traceback when no attribute column is numeric (for example decimal-comma CSV)
+- Severity claimed: HIGH
+- Location: `stats/panel_performance.py:551` (`compute_scale_usage`), reached from `modules/descriptive/workflow.py:76,393`; Step 1 has no numeric check (`modules/descriptive/workflow.py:255-340`, `modules/descriptive/ui.py:69-142`)
+- Evidence: `data/eu_comma_quoted.csv` (comma-separated, values such as `"7,5"`). DA, map Panelist/Product/Session, scale 0 to 10. Step 1 shows only "**480 blank cells detected** across 5 attribute columns ... treats a blank as a missing observation". Clicking Run gives an exception element `KeyError: 'mean_bias'` with a stack trace (`client.showErrorDetails` is `full`, so the user sees the full traceback). The same happens for any file whose attribute columns are all text.
+
+### FUNC-03: Duplicated rows silently change DA results
+- Severity claimed: HIGH
+- Location: `modules/descriptive/ui.py:69-142` (`validate_da_design` has no duplicate check); `stats/da_anova.py`
+- Evidence: `data/dup_rows.csv` is `small.csv` concatenated twice (a typical copy/paste or double-export error). DA Step 1 shows no warning at all (metrics still say 12 assessors, 4 products, 2 replicates). The ANOVA changes materially (`checks1.py`):
+  ```
+  small: MilkF F_product 64.98, df_error 48, tested_against Residual, p_interaction 0.113
+  dup:   MilkF F_product 44.43, df_error 33, tested_against Interaction, p_interaction 3.1e-10
+  ```
+  Every attribute's interaction becomes "significant" and the error term switches. RATA is unaffected in substance (cells are averaged, `modules/rata/ui.py` warns only when no replicate is mapped).
+
+### FUNC-04: Blank product (or assessor) cells become a real level called "nan"; RATA crashes
+- Severity claimed: HIGH
+- Location: `core/data.py:190-197` (`clean_and_structure_data` casts meta columns with `astype(str)`), `stats/mixed_models.py:60`
+- Evidence: `data/nan_product.csv` (three rows with an empty Product cell).
+  - DA: runs with no warning; Step 1 metric says "Products 4" (computed on the raw frame) but `da_df_long` contains products `['choc1','choc2','choc3','choc4','nan']`, so a fifth product "nan" with three observations enters the ANOVA, means, maps and export.
+  - RATA: Step 1 shows "Products 5" and an unbalanced-design warning, then Run raises `PatsyError: factor contains missing values` as an exception element (`modules/rata/ui.py:427` to `stats/mixed_models.py:60`).
+
+### FUNC-05: File reading is brittle and failures are silent or unintelligible (delimiter, decimal comma, encoding, .xls, .CSV)
+- Severity claimed: HIGH
+- Location: `core/data.py:7-37` (`load_data`); uploaders in `modules/descriptive/workflow.py:109`, `modules/rata/ui.py:108`, `modules/cata/ui.py:369,616` accept `xls`
+- Evidence (`load_check.py` and AppTest `run_bad.py`):
+  - `;`-separated file (`data/eu_semicolon.csv`, Excel's CSV default in most of continental Europe): loads as **one** column `Panelist;Session;Product;...`. Step 1 shows no error; the mapping selectbox simply offers that one string. Same for a tab-separated `.csv` and a file with a title row above the header (`title_row.csv`: single column "Study XYZ export 2026").
+  - Decimal commas: see FUNC-02 (DA crash) and FUNC-06 (RATA message).
+  - Latin-1 file with umlauts (`latin1.csv`): `Error loading file: 'utf-8' codec can't decode byte 0xfc in position 61: invalid start byte`.
+  - `.xls`: uploaders advertise it but `xlrd` is not in `requirements.txt` or the venv; any real `.xls` gives `Error loading file: Missing optional dependency 'xlrd'. Install xlrd >= 2.0.1 for xls Excel support Use pip or conda to install xlrd.`
+  - `SMALL.CSV`: `load_data` tests `name.endswith('.csv')` case-sensitively, so it goes to `read_excel`: `Error loading file: Excel file format cannot be determined, you must specify an engine manually.` (Inferred: Streamlit's uploader accepts `.CSV` for `type=["csv"]`; not tested in a browser.)
+- Evidence: 
+
+### IO-01: Trailing empty rows create a phantom product "nan"; DA silently changes results, RATA crashes
+- Severity claimed: BLOCKER
+- Location: `core/data.py:17-37` (`load_data`, no empty-row drop), `core/data.py:193-195` (`astype(str)` turns NaN into the string `'nan'`), `core/data.py:214` (RATA zero-fill); RATA `modules/rata/ui.py:427` -> `stats/mixed_models.py:60`
+- Evidence: sensochoc exported to CSV plus two lines of only commas (the usual artefact of deleted rows in Excel). `load_data` returns 350 rows, the last two all-NaN. After `clean_and_structure_data` both DA and RATA carry a product `'nan'`, assessor `'nan'` and replicate `'nan'`.
+  - DA (AppTest): no error. The only message is "28 blank cells detected". Step 1 metrics say Products 6 / Assessors 29, but `da_df_long` has products `[choc1..choc6, 'nan']` and 30 assessors. `'nan'` shows up in `da_summary_df`, `da_cld_df` (for example `MilkF nan abcde`), `da_rv_df` (30 assessors) and the Raw_Data export. Direct comparison (`da_cld.py`) against the clean file shows **3 CLD pairwise verdicts among the real products change**: Bitterness choc4 vs choc6 and Sweetness choc2 vs choc6 go from different to not different. Panel-performance frames (`da_agree_df`, `da_scale_df`, `da_rv_df`) also differ.
+  - RATA (AppTest): the zero-filled `'nan'` product passes validation. It shows only an "Unbalanced design (Min: 1, Max: 29)" warning and Products 7. "Run full analysis" then raises an uncaught `patsy.PatsyError: factor contains missing values` from `run_mixed_models`. The user sees a traceback.
+  - An xlsx whose stray cell holds a space, or a formatted row further down, gives the same NaN rows (`fmt2.py`, `trail.xlsx`: 7 rows for 2 data rows, plus `Unnamed: 3/4` columns).
+
+### IO-02: Decimal-comma numbers are silently zero-filled (RATA), dropped (DA) or dropped as whole columns (means tables)
+- Severity claimed: HIGH
+- Location: `core/data.py:199-214`, `core/data.py:103-109` (`load_precomputed_means`, 50 % coercion rule), RATA blank-cell warning `modules/rata/ui.py` Step 1
+- Evidence: sensochoc with 35 of 348 `CocoaA` cells written as `"7,5"` (a comma-delimited CSV with quoted decimal-comma cells, or a column Excel stored as text).
+  - RATA: no error. The warning reads "35 blank cells detected … filled with 0". After the run, `CocoaA` has 36 zeros instead of 1: every 7.5 became 0.
+  - DA: "35 blank cells detected … treated as missing observation". The values are dropped from the ANOVA.
+  - The text-column check only fires above 50 % non-numeric, and the scale-range check (`core/upload_validation.py:63`) coerces first, so neither catches it.
+  - Means table (`load_precomputed_means`, `fmt2.py`): a column that is all decimal-comma (`Sour`) stays object dtype and is silently left out, because the Fusion/PrefMap validators keep only numeric columns (`modules/fusion/workflow.py:536`, `modules/prefmap/workflow.py:338`). Mixed columns get NaN cells. `nan_affected` is returned, but no caller reads it (grep: only the tuple unpacking at `fusion/workflow.py:363` and `prefmap/workflow.py:313`), so the NaN warning the docstring promises is never shown.
+
+### IO-06: `Run_Parameters` cannot reproduce a run: no date, dependency versions, commit, bootstrap settings or file fingerprint; the version stamp "1.0.0" is ambiguous
+- Severity claimed: HIGH
+- Location: `utils/export.py:334-566` (`build_run_parameters_sheet`), `core/__version__.py`
+- Evidence: the exports generated for RATA, DA, CATA and Liking (see `inspect_xlsx.py` output) record `freesense_version = 1.0.0`, module, palette, file name, col_map, scale, alpha, post-hoc and module-specific options. None of them records:
+  - export date and time (only the Fusion `Analysis_Info` sheet has one, `utils/export.py:1753`)
+  - Python, statsmodels, scipy, pandas, numpy, scikit-learn or pingouin versions
+  - git commit
+  - sheet name
+  - input file hash or row count
+  - for RATA/DA, the CVA/RV bootstrap settings (`stats/multivariate.py:11-12`, `N_BOOTSTRAP=500`, `BOOTSTRAP_SEED=42`). CATA does record its CA seed and iterations in `Methods_Notes`.
+
+  `git log v1.0.0..HEAD` lists 146 commits, including 2,667 inserted lines in `stats/` (for example the Type II empty-cell path), all still stamped `1.0.0`. The `requirements.txt` ranges are wide (`statsmodels>=0.14.2,<1`, `scipy>=1.13,<2`) and there is no lockfile, so two installs of "1.0.0" can differ numerically.

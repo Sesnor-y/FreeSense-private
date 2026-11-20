@@ -1,0 +1,107 @@
+
+########## Descriptive :: special_levels.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 1.8s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+--- Descriptive step 2 '2. Product discrimination' (0.3s)
+[Descriptive-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+--- Descriptive step 3 '3. Attribute overview' (0.1s)
+[Descriptive-3] exc=0 err=0 warn=0 info=0 charts=4 dfs=2 step=3
+--- Descriptive step 4 '4. Contrast analysis' (0.2s)
+[Descriptive-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=4
+--- Descriptive step 5 '5. Product mapping' (0.1s)
+[Descriptive-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- Descriptive step 6 '6. Panel performance' (0.6s)
+[Descriptive-6] exc=0 err=0 warn=0 info=0 charts=18 dfs=3 step=6
+--- Descriptive step 7 '7. Diagnostics' (0.3s)
+[Descriptive-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=7
+  EXPORT DA: 47632 bytes, sheets=['Descriptives', 'Means_Wide', 'ANOVA_Summary', 'ANOVA_Full', 'PostHoc_Pairwise', 'Perf_Discrimination', 'Perf_Repeatability', 'Perf_Agreement', 'Perf_GlobalAgreement', 'Perf_ScaleUsage', 'Perf_Panel', 'Perf_Summary', 'Perf_Training', 'Correlations', 'Contrast Analysis', 'Raw_Data', 'Run_Parameters']
+--- Descriptive step 8 '8. Results & export' (0.3s)
+[Descriptive-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8
+
+########## Descriptive :: weird_attrs.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'Sweet+Sour', 'a ~ b', 'Bitter:after', '1st taste (x)', 'LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 1.8s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+--- Descriptive step 2 '2. Product discrimination' (0.1s)
+[Descriptive-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+--- Descriptive step 3 '3. Attribute overview' (0.1s)
+[Descriptive-3] exc=0 err=0 warn=0 info=0 charts=4 dfs=2 step=3
+--- Descriptive step 4 '4. Contrast analysis' (0.2s)
+[Descriptive-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=4
+--- Descriptive step 5 '5. Product mapping' (0.1s)
+[Descriptive-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- Descriptive step 6 '6. Panel performance' (0.9s)
+[Descriptive-6] exc=0 err=0 warn=0 info=0 charts=18 dfs=3 step=6
+--- Descriptive step 7 '7. Diagnostics' (0.8s)
+[Descriptive-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=7
+  EXPORT DA: 48375 bytes, sheets=['Descriptives', 'Means_Wide', 'ANOVA_Summary', 'ANOVA_Full', 'PostHoc_Pairwise', 'Perf_Discrimination', 'Perf_Repeatability', 'Perf_Agreement', 'Perf_GlobalAgreement', 'Perf_ScaleUsage', 'Perf_Panel', 'Perf_Summary', 'Perf_Training', 'Correlations', 'Contrast Analysis', 'Raw_Data', 'Run_Parameters']
+--- Descriptive step 8 '8. Results & export' (0.3s)
+[Descriptive-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8
+
+########## Descriptive :: collide.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'Sweet', 'Sweet.1', 'sweet', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 2.8s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+--- Descriptive step 2 '2. Product discrimination' (0.1s)
+[Descriptive-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+--- Descriptive step 3 '3. Attribute overview' (0.1s)
+[Descriptive-3] exc=0 err=0 warn=0 info=0 charts=4 dfs=2 step=3
+--- Descriptive step 4 '4. Contrast analysis' (0.1s)
+[Descriptive-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=4
+--- Descriptive step 5 '5. Product mapping' (0.1s)
+[Descriptive-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- Descriptive step 6 '6. Panel performance' (0.6s)
+[Descriptive-6] exc=0 err=0 warn=0 info=0 charts=18 dfs=3 step=6
+--- Descriptive step 7 '7. Diagnostics' (0.6s)
+[Descriptive-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=7
+  EXPORT DA: 47053 bytes, sheets=['Descriptives', 'Means_Wide', 'ANOVA_Summary', 'ANOVA_Full', 'PostHoc_Pairwise', 'Perf_Discrimination', 'Perf_Repeatability', 'Perf_Agreement', 'Perf_GlobalAgreement', 'Perf_ScaleUsage', 'Perf_Panel', 'Perf_Summary', 'Perf_Training', 'Correlations', 'Contrast Analysis', 'Raw_Data', 'Run_Parameters']
+--- Descriptive step 8 '8. Results & export' (0.2s)
+[Descriptive-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8
+
+########## Descriptive :: extra_cols.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel', 'Comment', 'Date']
+[mapped] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **192 blank cells detected** across 2 attribute columns. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style dat
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=7
+  metric Replicates=2
+  run 1.8s
+[ran] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **192 blank cells detected** across 2 attribute columns. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute's ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style dat
+--- Descriptive step 2 '2. Product discrimination' (0.1s)
+[Descriptive-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+--- Descriptive step 3 '3. Attribute overview' (0.1s)
+[Descriptive-3] exc=0 err=0 warn=1 info=0 charts=4 dfs=2 step=3
+  WARNING: The following attribute(s) were excluded from the correlation analysis because their mean is constant across products (correlation undefined): Comment, Date
+--- Descriptive step 4 '4. Contrast analysis' (0.2s)
+[Descriptive-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=4
+--- Descriptive step 5 '5. Product mapping' (0.1s)
+[Descriptive-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- Descriptive step 6 '6. Panel performance' (0.6s)
+[Descriptive-6] exc=0 err=0 warn=0 info=0 charts=18 dfs=3 step=6
+--- Descriptive step 7 '7. Diagnostics' (0.6s)
+[Descriptive-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=7
+  EXPORT DA: 53223 bytes, sheets=['Descriptives', 'Means_Wide', 'ANOVA_Summary', 'ANOVA_Full', 'PostHoc_Pairwise', 'Perf_Discrimination', 'Perf_Repeatability', 'Perf_Agreement', 'Perf_GlobalAgreement', 'Perf_ScaleUsage', 'Perf_Panel', 'Perf_Summary', 'Perf_Training', 'Correlations', 'Contrast Analysis', 'Raw_Data', 'Run_Parameters']
+--- Descriptive step 8 '8. Results & export' (0.2s)
+[Descriptive-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8

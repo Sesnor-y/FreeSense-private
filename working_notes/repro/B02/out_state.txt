@@ -1,0 +1,23 @@
+complete True products ['choc1', 'choc2', 'choc3', 'choc4']
+[reuploaded special_levels] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+after reupload: analysis_complete False False False
+[step3 after reupload] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=3
+  WARNING: Please configure your parameters and run the full analysis in the **1. Study setup** step before proceeding.
+[renamed cols uploaded] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  mapping now Select… Select… None
+DA complete again True
+[prefmap using DA] exc=0 err=0 warn=0 info=1 charts=0 dfs=2 step=1
+  INFO: Select both a sensory data source and a consumer preference source above to proceed.
+  prefmap sensory means shape (4, 5)
+[back in DA] exc=0 err=0 warn=0 info=0 charts=0 dfs=1 step=1
+  DA still complete after switch? True True step 1
+  step1 captions: ['Upload your descriptive analysis data below and validate your data structure.', 'Sensory data analysis platform', 'Definitions and references for every statistical method used in this module.']
+  uploader value None
+[DA step3 after switch] exc=0 err=0 warn=0 info=0 charts=4 dfs=2 step=3
+  after re-upload same file: da complete None
+  after exclude change: da_analysis_complete None
+[prefmap after DA invalidated] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=1
+  WARNING: No Descriptive Analysis results found in this session. Run a DA analysis in the Descriptive module first, then return here.
+  prefmap sensory means still (4, 5)
+fusion radio options ['Use Descriptive Analysis results from this session', 'Use RATA results from this session', 'Upload pre-computed sensory means (CSV/xlsx)']
+[fusion open] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1

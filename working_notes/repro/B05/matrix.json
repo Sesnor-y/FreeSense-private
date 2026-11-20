@@ -1,0 +1,2553 @@
+[
+ [
+  "stats/cata.py",
+  "run_cata_contrast",
+  59,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "cached_run_cata_contrast",
+  292,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "_validate_ca_input",
+  340,
+  4,
+  {
+   "STRUCT": 2,
+   "REF": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_ellipse_table_headers_are_unique",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_cata.py::test_ca_signature_and_inertia",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "compute_ca",
+  370,
+  4,
+  {
+   "STRUCT": 2,
+   "REF": 1,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_cata.py::test_ellipse_table_headers_are_unique",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_cata.py::test_ca_signature_and_inertia",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "cached_compute_ca",
+  556,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_ellipse_table_headers_are_unique",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "_build_consumer_cube",
+  566,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_ellipse_table_headers_are_unique",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "_bootstrap_supplementary_coords",
+  620,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_ellipse_table_headers_are_unique",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "_fit_confidence_ellipse",
+  713,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_ellipse_table_headers_are_unique",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "compute_ca_ellipses",
+  755,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_ellipse_table_headers_are_unique",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "_normalise_product_name",
+  918,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "_match_cata_liking_products",
+  925,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "summarise_liking_overlap",
+  955,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "_assign_quadrant",
+  1008,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "compute_penalty",
+  1059,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "reassign_penalty_quadrants",
+  1444,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/cata.py",
+  "cached_compute_penalty",
+  1484,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/contrast.py",
+  "compute_contrast",
+  53,
+  10,
+  {
+   "STRUCT": 9,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_rata.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_export_rata.py::test_contrast_reference_reaches_the_rata_workbook",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[RATA]"
+  ]
+ ],
+ [
+  "stats/contrast.py",
+  "_all_pairs_raw_pvals",
+  634,
+  5,
+  {
+   "STRUCT": 5
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_rata.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[RATA]"
+  ]
+ ],
+ [
+  "stats/contrast.py",
+  "cached_compute_contrast",
+  752,
+  5,
+  {
+   "STRUCT": 3,
+   "NUM": 2
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_unbalanced_designs.py::test_da_contrast_uses_adjusted_difference",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/da_anova.py",
+  "_safe_float",
+  107,
+  7,
+  {
+   "REF": 1,
+   "STRUCT": 3,
+   "NUM": 3
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_da_anova.py::test_signature_and_shape",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_stage_f_smoke.py::test_da_anova_pin",
+   "validation_pins::da_freesense"
+  ]
+ ],
+ [
+  "stats/da_anova.py",
+  "run_da_anova",
+  121,
+  10,
+  {
+   "NUM": 4,
+   "REF": 1,
+   "STRUCT": 5
+  },
+  5,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_da_anova.py::test_signature_and_shape",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_stage_f_smoke.py::test_da_anova_pin",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_no_replicate_design_with_gaps_stays_additive_type_iii",
+   "tests/test_unbalanced_designs.py::test_summary_means_are_assessor_adjusted",
+   "validation_pins::da_freesense"
+  ]
+ ],
+ [
+  "stats/da_anova.py",
+  "compute_da_diagnostics",
+  493,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/data_fusion.py",
+  "_normalise",
+  15,
+  4,
+  {
+   "STRUCT": 2,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_apptest_fusion.py::test_step_1_settings_round_trip_and_upload_reset",
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin"
+  ]
+ ],
+ [
+  "stats/data_fusion.py",
+  "_extract_digits",
+  23,
+  0,
+  {},
+  0,
+  []
+ ],
+ [
+  "stats/data_fusion.py",
+  "match_samples",
+  41,
+  4,
+  {
+   "STRUCT": 2,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_apptest_fusion.py::test_step_1_settings_round_trip_and_upload_reset",
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin"
+  ]
+ ],
+ [
+  "stats/data_fusion.py",
+  "merge_data_blocks",
+  228,
+  3,
+  {
+   "STRUCT": 2,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_unbalanced_designs.py::test_fusion_merge_reports_incomplete_variables"
+  ]
+ ],
+ [
+  "stats/data_fusion.py",
+  "drop_incomplete_attributes",
+  466,
+  4,
+  {
+   "STRUCT": 3,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_apptest_fusion.py::test_step_1_settings_round_trip_and_upload_reset",
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_unbalanced_designs.py::test_means_table_gaps_are_left_out_not_filled"
+  ]
+ ],
+ [
+  "stats/data_fusion.py",
+  "log_transform",
+  481,
+  0,
+  {},
+  0,
+  []
+ ],
+ [
+  "stats/data_fusion.py",
+  "sqrt_transform",
+  506,
+  0,
+  {},
+  0,
+  []
+ ],
+ [
+  "stats/data_fusion.py",
+  "project_supplementary",
+  528,
+  1,
+  {
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pca_settings_are_recorded_and_exported"
+  ]
+ ],
+ [
+  "stats/data_fusion.py",
+  "autoscale",
+  587,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  7,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_effective_rank_is_not_assumed_scale_invariant",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/data_fusion.py",
+  "inverse_autoscale",
+  611,
+  0,
+  {},
+  0,
+  []
+ ],
+ [
+  "stats/descriptive.py",
+  "_apply_adjusted_means",
+  16,
+  11,
+  {
+   "NUM": 4,
+   "REF": 2,
+   "STRUCT": 5
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_rata_replicates.py::test_per_rep_rate_below_any_rep_rate_when_a_tick_is_not_repeated",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_summary_means_are_assessor_adjusted",
+   "validation_pins::da_freesense",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/descriptive.py",
+  "calculate_descriptives",
+  44,
+  6,
+  {
+   "STRUCT": 3,
+   "NUM": 2,
+   "REF": 1
+  },
+  4,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_rata_replicates.py::test_per_rep_rate_below_any_rep_rate_when_a_tick_is_not_repeated",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/descriptive.py",
+  "calculate_da_descriptives",
+  100,
+  7,
+  {
+   "NUM": 3,
+   "REF": 1,
+   "STRUCT": 3
+  },
+  2,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_summary_means_are_assessor_adjusted",
+   "validation_pins::da_freesense"
+  ]
+ ],
+ [
+  "stats/descriptive.py",
+  "calculate_attribute_correlations",
+  142,
+  5,
+  {
+   "STRUCT": 3,
+   "NUM": 2
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/jar_penalty.py",
+  "_jar_masks",
+  37,
+  3,
+  {
+   "NUM": 1,
+   "STRUCT": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "validation_pins::jar_freesense"
+  ]
+ ],
+ [
+  "stats/jar_penalty.py",
+  "_attr_penalty_stats",
+  63,
+  3,
+  {
+   "NUM": 1,
+   "STRUCT": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "validation_pins::jar_freesense"
+  ]
+ ],
+ [
+  "stats/jar_penalty.py",
+  "_adjust_two_families",
+  174,
+  3,
+  {
+   "NUM": 1,
+   "STRUCT": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "validation_pins::jar_freesense"
+  ]
+ ],
+ [
+  "stats/jar_penalty.py",
+  "compute_jar_penalty",
+  201,
+  3,
+  {
+   "NUM": 1,
+   "STRUCT": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "validation_pins::jar_freesense"
+  ]
+ ],
+ [
+  "stats/jar_penalty.py",
+  "compute_jar_penalty_long",
+  359,
+  2,
+  {
+   "NUM": 1,
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options"
+  ]
+ ],
+ [
+  "stats/jar_penalty.py",
+  "compute_jar_distribution",
+  443,
+  2,
+  {
+   "NUM": 1,
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "compute_liking_lmm",
+  111,
+  5,
+  {
+   "STRUCT": 2,
+   "NUM": 2,
+   "REF": 1
+  },
+  1,
+  [
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_liking.py::test_single_method_segmentation_renders_without_a_tab_strip",
+   "tests/test_liking_acceptance.py::test_R13_cov_lsmeans_labelled",
+   "tests/test_liking_acceptance.py::test_R1_all_keys_present",
+   "validation_pins::liking_freesense"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "filter_sparse_demographic_levels",
+  549,
+  2,
+  {
+   "NUM": 2
+  },
+  5,
+  [
+   "tests/test_apptest_liking.py::test_demographic_panels_use_the_shared_stats_helpers",
+   "tests/test_stats_layer_moves.py::test_sparse_level_filter_matches_the_inline_expression"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "demographic_pearson_by_product",
+  571,
+  3,
+  {
+   "NUM": 2,
+   "STRUCT": 1
+  },
+  3,
+  [
+   "tests/test_apptest_liking.py::test_demographic_panels_use_the_shared_stats_helpers",
+   "tests/test_stats_layer_moves.py::test_demographic_pearson_is_nan_below_three_pairs",
+   "tests/test_stats_layer_moves.py::test_demographic_pearson_matches_the_inline_loop"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "demographic_anova_by_product",
+  593,
+  2,
+  {
+   "NUM": 2
+  },
+  3,
+  [
+   "tests/test_apptest_liking.py::test_demographic_panels_use_the_shared_stats_helpers",
+   "tests/test_stats_layer_moves.py::test_demographic_anova_matches_the_inline_loop"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "demographic_expected_cell_sizes",
+  637,
+  2,
+  {
+   "STRUCT": 2
+  },
+  3,
+  [
+   "tests/test_stats_layer_moves.py::test_expected_cell_sizes_flags_a_sparse_table",
+   "tests/test_stats_layer_moves.py::test_expected_cell_sizes_returns_none_instead_of_raising"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "acceptance_share",
+  664,
+  3,
+  {
+   "NUM": 2,
+   "STRUCT": 1
+  },
+  3,
+  [
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_liking.py::test_step2_lmm_table_labels_every_column",
+   "tests/test_stats_layer_moves.py::test_acceptance_share_matches_the_inline_expression"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "compute_liking_cld",
+  705,
+  5,
+  {
+   "STRUCT": 2,
+   "NOASSERT": 1,
+   "NUM": 1,
+   "REF": 1
+  },
+  1,
+  [
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_liking.py::test_single_method_segmentation_renders_without_a_tab_strip",
+   "tests/test_apptest_liking.py::test_step2_lmm_table_labels_every_column",
+   "tests/test_liking_acceptance.py::test_R17_post_hoc_method_validation",
+   "validation_pins::liking_freesense"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "compute_demographic_overview",
+  867,
+  1,
+  {
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_demographic_panels_use_the_shared_stats_helpers"
+  ]
+ ],
+ [
+  "stats/liking.py",
+  "compute_twoway_anova_demo",
+  952,
+  1,
+  {
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_demographic_panels_use_the_shared_stats_helpers"
+  ]
+ ],
+ [
+  "stats/mdpref.py",
+  "compute_preference_map",
+  14,
+  1,
+  {
+   "REF": 1
+  },
+  1,
+  [
+   "validation_pins::liking_freesense"
+  ]
+ ],
+ [
+  "stats/mixed_models.py",
+  "run_mixed_models",
+  13,
+  7,
+  {
+   "NUM": 2,
+   "STRUCT": 4,
+   "REF": 1
+  },
+  2,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_mixed_models.py::test_constant_attribute_yields_exactly_one_anova_row",
+   "tests/test_stage_f_smoke.py::test_rata_lmm_pin",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/multivariate.py",
+  "compute_pca_scores",
+  15,
+  4,
+  {
+   "STRUCT": 3,
+   "NUM": 1
+  },
+  5,
+  [
+   "tests/test_apptest_fusion.py::test_pca_settings_are_recorded_and_exported",
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_stats_layer_moves.py::test_fusion_correlation_pca_is_unchanged",
+   "tests/test_stats_layer_moves.py::test_fusion_covariance_pca_is_unchanged"
+  ]
+ ],
+ [
+  "stats/multivariate.py",
+  "incomplete_mean_attributes",
+  87,
+  4,
+  {
+   "STRUCT": 4
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_rata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_pca_leaves_out_an_attribute_a_product_was_never_rated_on"
+  ]
+ ],
+ [
+  "stats/multivariate.py",
+  "calculate_pca",
+  97,
+  4,
+  {
+   "STRUCT": 4
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_rata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_pca_leaves_out_an_attribute_a_product_was_never_rated_on"
+  ]
+ ],
+ [
+  "stats/multivariate.py",
+  "run_cva",
+  163,
+  4,
+  {
+   "STRUCT": 4
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_rata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_unbalanced_designs.py::test_cva_drops_incomplete_profiles_instead_of_zero_filling",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/multivariate.py",
+  "calculate_panel_stability",
+  224,
+  4,
+  {
+   "STRUCT": 4
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_rata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_panel_stability_runs_on_gaps_without_zero_fill"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "compute_discrimination",
+  35,
+  5,
+  {
+   "STRUCT": 3,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "compute_repeatability",
+  143,
+  6,
+  {
+   "REF": 1,
+   "STRUCT": 3,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "validation_pins::da_freesense"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "compute_agreement",
+  282,
+  5,
+  {
+   "STRUCT": 3,
+   "NUM": 2
+  },
+  4,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "compute_scale_usage",
+  431,
+  5,
+  {
+   "STRUCT": 3,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "guideline_band",
+  660,
+  3,
+  {
+   "STRUCT": 3
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_da.py::test_step_6_tabs_render_without_exception",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "evaluated_attributes",
+  671,
+  6,
+  {
+   "STRUCT": 5,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_da.py::test_step_6_tabs_render_without_exception",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_panel_performance_summary.py::test_no_significant_attribute_means_not_assessed",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "compute_pooled_discrimination",
+  690,
+  6,
+  {
+   "STRUCT": 5,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_da.py::test_step_6_tabs_render_without_exception",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_panel_performance_summary.py::test_without_replicates_discrimination_is_not_assessed",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "_loo_low_outlier",
+  776,
+  6,
+  {
+   "STRUCT": 5,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_da.py::test_step_6_tabs_render_without_exception",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_panel_performance_summary.py::test_no_significant_attribute_means_not_assessed",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "summarise_assessor_performance",
+  798,
+  7,
+  {
+   "STRUCT": 6,
+   "NUM": 1
+  },
+  2,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_da.py::test_step_6_tabs_render_without_exception",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_panel_performance_summary.py::test_no_significant_attribute_means_not_assessed",
+   "tests/test_panel_performance_summary.py::test_without_replicates_discrimination_is_not_assessed",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "summarise_panel_performance",
+  923,
+  4,
+  {
+   "STRUCT": 3,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_da.py::test_step_6_tabs_render_without_exception",
+   "tests/test_panel_performance_summary.py::test_panel_summary_counts",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/panel_performance.py",
+  "assessor_attribute_detail",
+  976,
+  1,
+  {
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_step_6_tabs_render_without_exception"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "compute_vip",
+  37,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "compute_correlation_loadings",
+  81,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "hotelling_t2_limit",
+  133,
+  4,
+  {
+   "STRUCT": 1,
+   "NUM": 3
+  },
+  5,
+  [
+   "tests/test_pls.py::test_hotelling_t2_limit_clamps_a_to_one",
+   "tests/test_pls.py::test_hotelling_t2_limit_falls_back_to_chi2_when_n_le_a[5-5-11.070497693516351]",
+   "tests/test_pls.py::test_hotelling_t2_limit_falls_back_to_chi2_when_n_le_a[6-4-12.591587243743977]",
+   "tests/test_pls.py::test_hotelling_t2_limit_matches_the_f_form[3-16-11.805693385250237]"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "effective_rank",
+  181,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  8,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_effective_n_components",
+  211,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_get_cv_splitter",
+  227,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_predict_at_component",
+  237,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_compute_q2_cv",
+  257,
+  6,
+  {
+   "NUM": 3,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_autoscale_off_reaches_the_fit",
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_permutation_test",
+  422,
+  1,
+  {
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_pls.py::test_signature_and_shapes"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_hotelling_t2",
+  490,
+  6,
+  {
+   "NUM": 3,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_autoscale_off_reaches_the_fit",
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_q_residuals",
+  528,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_leverage",
+  549,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 2,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "_bootstrap_q2_ci",
+  570,
+  1,
+  {
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_pls.py::test_signature_and_shapes"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "fit_pls",
+  660,
+  6,
+  {
+   "NUM": 2,
+   "STRUCT": 3,
+   "REF": 1
+  },
+  7,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing",
+   "tests/test_pls.py::test_effective_rank_caps_mixture_design",
+   "tests/test_pls.py::test_signature_and_shapes",
+   "tests/test_stage_f_smoke.py::test_fusion_pls_pin",
+   "validation_pins::fusion_freesense"
+  ]
+ ],
+ [
+  "stats/pls.py",
+  "compute_cv_coefficient_stability",
+  994,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_fusion.py::test_pls_fit_uses_widget_parameters_and_records_them",
+   "tests/test_apptest_fusion.py::test_post_fit_step_1_changes_clear_the_model_without_crashing"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_get_letter",
+  9,
+  9,
+  {
+   "REF": 2,
+   "NUM": 2,
+   "STRUCT": 5
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "validation_pins::da_freesense",
+   "validation_pins::liking_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_build_cld",
+  17,
+  9,
+  {
+   "REF": 2,
+   "NUM": 2,
+   "STRUCT": 5
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "validation_pins::da_freesense",
+   "validation_pins::liking_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "resolve_da_error_term",
+  95,
+  7,
+  {
+   "REF": 1,
+   "STRUCT": 4,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[Tukey-Kramer HSD]",
+   "validation_pins::da_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_observation_counts",
+  144,
+  7,
+  {
+   "REF": 1,
+   "STRUCT": 4,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[Tukey-Kramer HSD]",
+   "validation_pins::da_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_empty_cell_fit",
+  160,
+  10,
+  {
+   "REF": 2,
+   "STRUCT": 6,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[Tukey-Kramer HSD]",
+   "validation_pins::da_freesense",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_pair_se_factor",
+  169,
+  10,
+  {
+   "REF": 2,
+   "STRUCT": 6,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[Tukey-Kramer HSD]",
+   "validation_pins::da_freesense",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_rcbd_tukey_decisions",
+  177,
+  6,
+  {
+   "STRUCT": 4,
+   "NUM": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_rata.py::test_step1_readiness_box_retires_and_the_export_tip_moves_to_step_2",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_unbalanced_designs.py::test_rata_rcbd_tukey_uses_adjusted_means",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "generate_cld",
+  262,
+  18,
+  {
+   "STRUCT": 13,
+   "REF": 1,
+   "NUM": 4
+  },
+  3,
+  [
+   "tests/test_apptest_da.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_apptest_rata.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_rata.py::test_step1_readiness_box_retires_and_the_export_tip_moves_to_step_2",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_consensus_divides_by_the_raters_of_each_cell",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_unbalanced_designs.py::test_da_contrast_uses_adjusted_difference",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[RATA]",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[FDR (Benjamini-Hochberg)]",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[Tukey-Kramer HSD]",
+   "validation_pins::da_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "generate_pairwise_table",
+  534,
+  10,
+  {
+   "NUM": 4,
+   "STRUCT": 5,
+   "REF": 1
+  },
+  2,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_unbalanced_designs.py::test_da_contrast_uses_adjusted_difference",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[FDR (Benjamini-Hochberg)]",
+   "tests/test_unbalanced_designs.py::test_posthoc_compares_adjusted_means[Tukey-Kramer HSD]",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_paired_pvals_and_decisions",
+  737,
+  2,
+  {
+   "REF": 1,
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/posthoc.py",
+  "_paired_ttest_decisions",
+  773,
+  3,
+  {
+   "STRUCT": 3
+  },
+  0,
+  [
+   "tests/test_apptest_rata.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[RATA]"
+  ]
+ ],
+ [
+  "stats/prefmap.py",
+  "compute_prefmap",
+  32,
+  6,
+  {
+   "REF": 1,
+   "NUM": 3,
+   "STRUCT": 1,
+   "NOASSERT": 1
+  },
+  4,
+  [
+   "tests/test_apptest_prefmap.py::test_fit_is_invalidated_when_the_sensory_space_changes",
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_prefmap.py::test_direction_summary_uses_vector_consumers_only",
+   "tests/test_prefmap.py::test_signature_and_keys",
+   "tests/test_prefmap.py::test_value_error_when_coords_not_2d",
+   "validation_pins::prefmap_freesense"
+  ]
+ ],
+ [
+  "stats/prefmap.py",
+  "compute_preference_surface",
+  340,
+  2,
+  {
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_apptest_prefmap.py::test_settings_round_trip_and_upload_reset"
+  ]
+ ],
+ [
+  "stats/prefmap.py",
+  "summarise_preference_directions",
+  480,
+  5,
+  {
+   "NUM": 3,
+   "STRUCT": 2
+  },
+  4,
+  [
+   "tests/test_apptest_prefmap.py::test_fit_is_invalidated_when_the_sensory_space_changes",
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_prefmap.py::test_direction_summary_accepts_a_product_column",
+   "tests/test_prefmap.py::test_direction_summary_is_empty_without_vector_consumers",
+   "tests/test_prefmap.py::test_direction_summary_uses_vector_consumers_only"
+  ]
+ ],
+ [
+  "stats/segmentation.py",
+  "_standardise_rows",
+  27,
+  4,
+  {
+   "NUM": 2,
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_cluster_profile_caption_matches_the_standardise_setting",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_liking.py::test_single_method_segmentation_renders_without_a_tab_strip",
+   "tests/test_segmentation.py::test_kmeans_recovers_ground_truth_clusters"
+  ]
+ ],
+ [
+  "stats/segmentation.py",
+  "_cluster_profiles",
+  38,
+  3,
+  {
+   "NUM": 2,
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_liking.py::test_single_method_segmentation_renders_without_a_tab_strip",
+   "tests/test_segmentation.py::test_kmeans_recovers_ground_truth_clusters"
+  ]
+ ],
+ [
+  "stats/segmentation.py",
+  "_cluster_anova",
+  57,
+  6,
+  {
+   "STRUCT": 3,
+   "NUM": 3
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_cluster_profile_caption_matches_the_standardise_setting",
+   "tests/test_apptest_liking.py::test_incomplete_consumers_are_reported_below_the_warning_threshold",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_liking.py::test_single_method_segmentation_renders_without_a_tab_strip",
+   "tests/test_segmentation.py::test_kmeans_recovers_ground_truth_clusters",
+   "tests/test_segmentation.py::test_recut_ahc_matches_direct_fit"
+  ]
+ ],
+ [
+  "stats/segmentation.py",
+  "recut_clusters",
+  96,
+  4,
+  {
+   "NUM": 3,
+   "STRUCT": 1
+  },
+  3,
+  [
+   "tests/test_apptest_liking.py::test_cluster_profile_caption_matches_the_standardise_setting",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_segmentation.py::test_recut_ahc_matches_direct_fit",
+   "tests/test_segmentation.py::test_recut_kmeans_matches_direct_fit"
+  ]
+ ],
+ [
+  "stats/segmentation.py",
+  "compute_ahc_clusters",
+  143,
+  3,
+  {
+   "NUM": 1,
+   "STRUCT": 2
+  },
+  5,
+  [
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_liking.py::test_single_method_segmentation_renders_without_a_tab_strip",
+   "tests/test_segmentation.py::test_ahc_signature_smoke"
+  ]
+ ],
+ [
+  "stats/segmentation.py",
+  "compute_kmeans_clusters",
+  238,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  5,
+  [
+   "tests/test_apptest_liking.py::test_cluster_profile_caption_matches_the_standardise_setting",
+   "tests/test_segmentation.py::test_kmeans_recovers_ground_truth_clusters"
+  ]
+ ],
+ [
+  "stats/segmentation.py",
+  "compute_demographic_association",
+  357,
+  0,
+  {},
+  1,
+  []
+ ],
+ [
+  "stats/shared/frequency.py",
+  "run_cochrans_q",
+  39,
+  9,
+  {
+   "NUM": 3,
+   "REF": 1,
+   "STRUCT": 5
+  },
+  4,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_cata.py::test_cochrans_q_focal_attribute",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[RATA]",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "compute_citation_disagreement",
+  158,
+  6,
+  {
+   "STRUCT": 4,
+   "NUM": 2
+  },
+  5,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_rata_replicates.py::test_disagreement_counts_the_one_unrepeated_tick",
+   "tests/test_rata_replicates.py::test_disagreement_is_empty_with_one_observation_per_cell"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "_aggregate_consumer_citations",
+  196,
+  4,
+  {
+   "STRUCT": 2,
+   "NUM": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_step1_parameters_round_trip_and_upload_reset",
+   "tests/test_cata.py::test_count_table_shape_and_totals",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "build_citation_counts",
+  221,
+  4,
+  {
+   "STRUCT": 2,
+   "NUM": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_step1_parameters_round_trip_and_upload_reset",
+   "tests/test_cata.py::test_count_table_shape_and_totals",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "build_citation_matrix",
+  253,
+  3,
+  {
+   "STRUCT": 1,
+   "NUM": 1,
+   "REF": 1
+  },
+  1,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_step1_parameters_round_trip_and_upload_reset",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "proportion_table",
+  289,
+  0,
+  {},
+  0,
+  []
+ ],
+ [
+  "stats/shared/frequency.py",
+  "wilson_ci",
+  312,
+  2,
+  {
+   "STRUCT": 2
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_contrast_chart_names_cochrans_q_not_anova",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "filter_attributes_by_citation",
+  358,
+  3,
+  {
+   "STRUCT": 1,
+   "NUM": 1,
+   "REF": 1
+  },
+  1,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_step1_parameters_round_trip_and_upload_reset",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "_pair_consumer_table",
+  424,
+  4,
+  {
+   "STRUCT": 2,
+   "NUM": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_cata.py::test_mcnemar_fdr_within_attribute_correction",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "_mcnemar_pair",
+  446,
+  4,
+  {
+   "STRUCT": 2,
+   "NUM": 1,
+   "REF": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_cata.py::test_mcnemar_fdr_within_attribute_correction",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "run_mcnemar_posthoc",
+  492,
+  5,
+  {
+   "NUM": 1,
+   "REF": 1,
+   "STRUCT": 3
+  },
+  2,
+  [
+   "tests/test_apptest_cata.py::test_contrast_reference_switch_keeps_previous_reference",
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_cata.py::test_mcnemar_fdr_within_attribute_correction",
+   "validation_pins::cata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/frequency.py",
+  "build_cld_from_mcnemar",
+  634,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "stats/shared/lsmeans.py",
+  "empty_cell_count",
+  30,
+  9,
+  {
+   "REF": 2,
+   "STRUCT": 5,
+   "NUM": 2
+  },
+  1,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_da_anova.py::test_signature_and_shape",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "validation_pins::da_freesense",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "stats/shared/lsmeans.py",
+  "additive_lsmeans",
+  42,
+  3,
+  {
+   "NUM": 1,
+   "STRUCT": 2
+  },
+  3,
+  [
+   "tests/test_unbalanced_designs.py::test_complete_design_lsmeans_equal_raw_means_and_one_over_n",
+   "tests/test_unbalanced_designs.py::test_disconnected_design_is_not_estimable",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/shared/lsmeans.py",
+  "pair_factor",
+  101,
+  2,
+  {
+   "NUM": 1,
+   "STRUCT": 1
+  },
+  2,
+  [
+   "tests/test_unbalanced_designs.py::test_complete_design_lsmeans_equal_raw_means_and_one_over_n",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]"
+  ]
+ ],
+ [
+  "stats/shared/lsmeans.py",
+  "adjusted_summary_means",
+  107,
+  12,
+  {
+   "NUM": 4,
+   "REF": 2,
+   "STRUCT": 6
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_rata_replicates.py::test_per_rep_rate_below_any_rep_rate_when_a_tick_is_not_repeated",
+   "tests/test_unbalanced_designs.py::test_every_step_renders_with_empty_cells[DA]",
+   "tests/test_unbalanced_designs.py::test_rata_rcbd_tukey_uses_adjusted_means",
+   "tests/test_unbalanced_designs.py::test_summary_means_are_assessor_adjusted",
+   "validation_pins::da_freesense",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "core/data.py",
+  "load_data",
+  8,
+  2,
+  {
+   "NOASSERT": 1,
+   "STRUCT": 1
+  },
+  3,
+  [
+   "tests/test_load_data.py::test_corrupt_excel_buffer_raises_value_error",
+   "tests/test_load_data.py::test_csv_round_trip_strips_and_deduplicates_headers"
+  ]
+ ],
+ [
+  "core/data.py",
+  "load_precomputed_means",
+  41,
+  0,
+  {},
+  0,
+  []
+ ],
+ [
+  "core/data.py",
+  "clean_and_structure_data",
+  138,
+  16,
+  {
+   "REF": 2,
+   "STRUCT": 7,
+   "NUM": 7
+  },
+  7,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_step1_parameters_round_trip_and_upload_reset",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_step1_parameters_round_trip_module_switch",
+   "tests/test_da_blank_fill.py::test_cata_never_zero_fills[False]",
+   "tests/test_da_blank_fill.py::test_descriptive_preserves_nan_by_default",
+   "tests/test_da_blank_fill.py::test_descriptive_zero_fills_when_declared",
+   "tests/test_da_blank_fill.py::test_rata_always_zero_fills[False]",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_panel_performance_summary.py::test_flags_on_sensochoc_match_the_audit",
+   "tests/test_rata_replicates.py::test_per_rep_rate_on_sensochoc",
+   "tests/test_stage_f_smoke.py::test_da_anova_pin",
+   "validation_pins::da_freesense",
+   "validation_pins::rata_freesense"
+  ]
+ ],
+ [
+  "core/data.py",
+  "build_cata_liking_long",
+  231,
+  2,
+  {
+   "STRUCT": 1,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules",
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_style_header",
+  21,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 3
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_fusion.py::test_initial_fit_lands_on_the_recommended_component_count",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_autofit_columns",
+  36,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 3
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_fusion.py::test_initial_fit_lands_on_the_recommended_component_count",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_zebra_rows",
+  48,
+  5,
+  {
+   "NUM": 2,
+   "STRUCT": 3
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_fusion.py::test_initial_fit_lands_on_the_recommended_component_count",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_colour_pval_column",
+  58,
+  6,
+  {
+   "NUM": 3,
+   "STRUCT": 3
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_format_p_value_cells",
+  83,
+  9,
+  {
+   "NUM": 3,
+   "STRUCT": 6
+  },
+  1,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_fusion.py::test_initial_fit_lands_on_the_recommended_component_count",
+   "tests/test_apptest_liking.py::test_demographics_sheet_carries_the_categorical_results",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc",
+   "tests/test_pvalue_convention.py::test_every_p_column_on_every_sheet_gets_the_number_format",
+   "tests/test_pvalue_convention.py::test_the_sweep_stops_at_the_next_block_on_a_stacked_sheet"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_unique_col",
+  114,
+  5,
+  {
+   "STRUCT": 4,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_layout_is_one_row_per_attribute_one_column_per_sample",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_sample_named_like_a_stat_column_does_not_collide"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_format_results_cell",
+  125,
+  5,
+  {
+   "STRUCT": 4,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_layout_is_one_row_per_attribute_one_column_per_sample",
+   "tests/test_export_rata.py::test_missing_sd_and_missing_cell_degrade_gracefully",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "build_rata_results_table",
+  145,
+  5,
+  {
+   "STRUCT": 4,
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_empty_cld_still_builds",
+   "tests/test_export_rata.py::test_layout_is_one_row_per_attribute_one_column_per_sample",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_rata_results_table_notes",
+  213,
+  4,
+  {
+   "STRUCT": 3,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_write_sheet_notes",
+  237,
+  4,
+  {
+   "STRUCT": 3,
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_rata_replicates_per_cell_label",
+  262,
+  6,
+  {
+   "STRUCT": 4,
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_contrast_reference_reaches_the_rata_workbook",
+   "tests/test_export_rata.py::test_methods_notes_items_in_order_with_replicate_info",
+   "tests/test_export_rata.py::test_methods_notes_items_in_order_without_replicate_info",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_rata_methods_notes_text",
+  271,
+  6,
+  {
+   "STRUCT": 4,
+   "NUM": 2
+  },
+  3,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_contrast_reference_reaches_the_rata_workbook",
+   "tests/test_export_rata.py::test_methods_notes_items_in_order_with_replicate_info",
+   "tests/test_export_rata.py::test_methods_notes_items_in_order_without_replicate_info",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "build_run_parameters_sheet",
+  334,
+  12,
+  {
+   "NUM": 6,
+   "STRUCT": 6
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter",
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_apptest_fusion.py::test_initial_fit_lands_on_the_recommended_component_count",
+   "tests/test_apptest_fusion.py::test_pca_settings_are_recorded_and_exported",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options",
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings",
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_contrast_reference_reaches_the_rata_workbook",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_da_perf_panel_sheet",
+  567,
+  2,
+  {
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_da_perf_assessor_sheet",
+  602,
+  2,
+  {
+   "NUM": 2
+  },
+  0,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "generate_da_excel_report",
+  631,
+  2,
+  {
+   "NUM": 2
+  },
+  2,
+  [
+   "tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_da_workbook_sheet_list_unchanged"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "generate_excel_report",
+  829,
+  5,
+  {
+   "STRUCT": 3,
+   "NUM": 2
+  },
+  9,
+  [
+   "tests/test_apptest_rata.py::test_export_contrast_reference_follows_the_stored_frame",
+   "tests/test_apptest_rata.py::test_run_analysis_uses_widget_parameters",
+   "tests/test_export_rata.py::test_every_p_value_in_the_real_workbook_is_formatted",
+   "tests/test_export_rata.py::test_rata_workbook_from_state_snapshot_on_worker_thread",
+   "tests/test_export_rata.py::test_rata_workbook_headless_on_sensochoc"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "generate_liking_excel_report",
+  1028,
+  2,
+  {
+   "NUM": 1,
+   "STRUCT": 1
+  },
+  2,
+  [
+   "tests/test_apptest_liking.py::test_demographics_sheet_carries_the_categorical_results",
+   "tests/test_apptest_liking.py::test_run_analysis_uses_widget_parameters_and_records_options"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "get_liking_export_sheet_list",
+  1636,
+  1,
+  {
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_liking.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "generate_fusion_excel_report",
+  1664,
+  2,
+  {
+   "STRUCT": 2
+  },
+  2,
+  [
+   "tests/test_apptest_fusion.py::test_initial_fit_lands_on_the_recommended_component_count",
+   "tests/test_apptest_fusion.py::test_pca_settings_are_recorded_and_exported"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "generate_prefmap_excel_report",
+  1935,
+  1,
+  {
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_prefmap.py::test_prefmap_fit_matches_stats_call_and_records_map_settings"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "_cata_methods_notes_text",
+  2079,
+  1,
+  {
+   "NUM": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "generate_cata_excel_report",
+  2185,
+  1,
+  {
+   "NUM": 1
+  },
+  1,
+  [
+   "tests/test_apptest_cata.py::test_run_analysis_uses_widget_parameters_and_records_filter"
+  ]
+ ],
+ [
+  "utils/export.py",
+  "get_cata_export_sheet_list",
+  2570,
+  1,
+  {
+   "STRUCT": 1
+  },
+  0,
+  [
+   "tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules"
+  ]
+ ]
+]

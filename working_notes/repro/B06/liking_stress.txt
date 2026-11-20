@@ -1,0 +1,12 @@
+    compute_liking_lmm: 3.47s
+    compute_liking_cld (Tukey): 0.53s
+  TOTAL step1: 4.00s
+    [S3] demographic_overview: 0.00s
+    [S3] twoway_anova_demo (3 vars, LMM each): 4.77s
+    [S4] contrast: 0.00s
+    [S5] AHC (k=3): 0.09s
+    [S5] k-means (k=3, n_init=50): 0.35s
+    [S5] demographic_association: 0.01s
+    [S6] JAR block (uncached, runs every Step 6 rerun): 0.23s
+    [S7] MDPREF: 0.01s
+LIKING cons=1000 prod=12 jar=8 rows=12000

@@ -1,0 +1,52 @@
+
+######## Liking :: hedochoc.xlsx
+[upload] exc=0 err=0 warn=0 info=1 charts=0 dfs=3 step=1
+  INFO: Map all three required columns to proceed.
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1
+  scale choice Custom
+  run 0.7s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1
+--- Liking step 2 '2. Hedonic overview' (0.4s)
+[Liking-2] exc=0 err=0 warn=1 info=0 charts=5 dfs=1 step=2
+  WARNING: **High consumer disagreement detected** — mean scores may be misleading. See explanation below.
+--- Liking step 3 '3. Consumer profile & liking by demographics' (0.0s)
+[Liking-3] exc=0 err=0 warn=0 info=1 charts=0 dfs=0 step=3
+  INFO: No demographics file was uploaded. To add demographic breakdowns, return to Step 1 and upload a secondary variables file.
+--- Liking step 4 '4. Contrast analysis' (0.1s)
+[Liking-4] exc=0 err=0 warn=0 info=0 charts=1 dfs=1 step=4
+--- Liking step 5 '5. Consumer segmentation' (0.2s)
+[Liking-5] exc=0 err=0 warn=0 info=0 charts=4 dfs=1 step=5
+--- Liking step 6 '6. JAR & penalty analysis' (0.0s)
+[Liking-6] exc=0 err=0 warn=0 info=1 charts=0 dfs=0 step=6
+  INFO: No JAR columns were confirmed in Step 1. Return to Step 1 and mark the JAR scale columns to enable this analysis.
+--- Liking step 7 '7. Preference mapping' (0.0s)
+[Liking-7] exc=0 err=0 warn=0 info=1 charts=0 dfs=0 step=7
+  INFO: Press **Run preference map** to compute the MDPREF analysis.
+  EXPORT Liking: 35955 bytes, sheets=['Acceptance', 'Distributions', 'Contrast', 'Raw_Data', 'Clusters_AHC', 'Run_Parameters']
+--- Liking step 8 '8. Results & export' (0.1s)
+[Liking-8] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=8
+LS means (choc):
+  product   ls_mean  se_lsmean  n_consumers
+0   choc1  5.328829   0.154965          222
+1   choc2  5.689189   0.154965          222
+2   choc3  5.765766   0.154965          222
+3   choc4  5.765766   0.154965          222
+4   choc5  5.626126   0.154965          222
+5   choc6  5.905405   0.154965          222
+
+######## Liking :: variety.csv
+[upload] exc=0 err=0 warn=0 info=1 charts=0 dfs=3 step=1
+  INFO: Map all three required columns to proceed.
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1
+  scale choice Custom
+  run 0.7s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1
+liking_lmm_results
+
+######## Liking :: JAR_sensominer.xlsx
+[upload] exc=0 err=0 warn=0 info=1 charts=0 dfs=3 step=1
+  INFO: Map all three required columns to proceed.
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1
+  scale choice 10-point
+  run 0.0s
+[ran] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1

@@ -1,0 +1,38 @@
+import sys; sys.path.insert(0, sys.argv[0].rsplit('/',1)[0])
+from harness import *
+import pandas as pd, io
+full = pd.read_excel('example_data/02_Descriptive/DA_chocolates_sensochoc.xlsx')
+b = io.StringIO(); full.to_csv(b, index=False); DA = b.getvalue().encode()
+h = pd.read_excel('example_data/03_Liking/Liking_chocolates_hedochoc.xlsx')
+w = h.pivot(index='product', columns='consumer', values='liking').reset_index(); w.columns = ['product']+[f'C{c}' for c in w.columns[1:]]
+b = io.BytesIO(); w.to_excel(b, index=False); LW = b.getvalue()
+def da_run(at, exclude=()):
+    upload(at, 'da_upload_main', name='sensochoc.csv', data=DA)
+    for k,v in [('da_assessor','Panelist'),('da_product','Product'),('da_replicate','Session')]: at.selectbox(key=k).set_value(v).run()
+    at.number_input(key='da_scale_max').set_value(10).run()
+    if exclude: at.multiselect(key='da_exclude_cols').set_value(list(exclude)).run()
+    at.button(key='da_run_analysis').click().run(timeout=900)
+    print('DA complete', at.session_state['da_analysis_complete'], 'attrs', len(at.session_state['da_attr_cols']))
+def switch(at, label):
+    at.button(key="ui_sidebar_all_modules").click().run()
+    [x for x in at.button if label in x.label][0].click().run()
+at = open_module("Descriptive Analysis"); da_run(at)
+switch(at, 'Preference Mapping')
+at.radio(key="prefmap_sensory_radio").set_value("Use Descriptive Analysis results from this session").run()
+at.radio(key="prefmap_consumer_radio").set_value("Upload raw consumer liking scores").run()
+upload(at, 'prefmap_upload_liking', name='w.xlsx', data=LW); report(at,'prefmap DA+liking')
+go(at,'PrefMap',2)
+fit=[x for x in at.button if 'Fit PREFMAP' in x.label]; fit[0].click().run(timeout=600); report(at,'fitted')
+r = at.session_state['prefmap_prefmap_results']; print('fit type', type(r))
+print('sensory means cols', list(at.session_state['prefmap_sensory_means'].columns))
+switch(at, 'Descriptive Analysis')
+da_run(at, exclude=['CocoaA','MilkA','CocoaF','MilkF','Caramel'])
+switch(at, 'Preference Mapping'); report(at,'prefmap step1 after DA rerun')
+print('sensory means cols now', list(at.session_state['prefmap_sensory_means'].columns) if at.session_state['prefmap_sensory_means'] is not None else None)
+print('fit still', at.session_state.to_dict().get('prefmap_prefmap_results') is not None, 'complete', at.session_state.to_dict().get('prefmap_analysis_complete'))
+go(at,'PrefMap',2); report(at,'prefmap step2 after DA rerun')
+go(at,'PrefMap',3); report(at,'prefmap step3 after DA rerun')
+# Fusion with DA
+switch(at, 'Data Fusion')
+at.radio(key='fusion_source_radio').set_value('Use Descriptive Analysis results from this session').run(); report(at,'fusion DA source')
+walk(at,'Fusion')

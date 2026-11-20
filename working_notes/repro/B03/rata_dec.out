@@ -1,0 +1,33 @@
+2026-09-26 18:02:47.294 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:47.295 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:47.296 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:47.296 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.039 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.040 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.040 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.041 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.041 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.042 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.042 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.043 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.154 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.155 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.157 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.303 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.304 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.304 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.411 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:48.412 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-26 18:02:48.414 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+loaded (348, 17) ['7,5', '6', '8', '7', '8', '7', '6', '4', '5', '5', '4,5', '6']
+errors: []
+warnings: ['**35 blank cells detected** across 1 attribute column. Blank cells are filled with **0** (treated as zero-intensity ratings). Verify this is correct for your data — a blank may indicate a missing observation rather than a genuine zero-intensity score.']
+metrics: [('Assessors', '29'), ('Products', '6'), ('Attributes', '14'), ('Replicates', '2')]
+exc: ElementList()
+products: ['choc1', 'choc2', 'choc3', 'choc4', 'choc5', 'choc6']
+assessors n: 29 has 'nan': False
+CocoaA intensity value counts head: {0.0: 36, 1.0: 5, 2.0: 12, 3.0: 15, 4.0: 26, 5.0: 41, 6.0: 54, 7.0: 61, 8.0: 55, 9.0: 36, 10.0: 7}
+    attribute  lr_stat  df       p_value significant  converged  numerical_warning warning_msg optimiser_used status
+3       MilkF  200.258   5  2.501152e-41         Yes       True              False                         cg     ok
+8  Bitterness  148.323   5  3.036784e-30         Yes       True              False                         cg     ok
+2      CocoaF  143.643   5  3.007049e-29         Yes       True              False                         cg     ok

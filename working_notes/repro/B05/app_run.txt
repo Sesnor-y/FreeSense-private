@@ -1,0 +1,118 @@
+bringing up nodes...
+bringing up nodes...
+
+........................................................................ [ 78%]
+....................                                                     [100%]
+=============================== warnings summary ===============================
+tests/test_apptest_cata.py::test_step1_parameters_round_trip_and_upload_reset
+tests/test_apptest_cata.py::test_rendered_conventions_follow_the_house_rules
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+  /tmp/claude-1000/-var-home-Lukas-Projects-RATA-Flow-App/9c9bcd14-2ca6-4847-a1b4-e4517d635af8/scratchpad/covtools/coverage/control.py:803: CoverageWarning: Dynamic contexts aren't supported with core=sysmon; context data may be incomplete (no-sysmon-context); see https://coverage.readthedocs.io/en/7.16.1/messages.html#warning-no-sysmon-context
+    self._warn(
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/stats/panel_performance.py:138: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+    disc_df['score'] = disc_df.groupby('attribute', group_keys=False).apply(_rank_column)
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:353: RuntimeWarning: invalid value encountered in scalar divide
+    icc1 = (msb - msw) / (msb + (k - 1) * msw)
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:354: RuntimeWarning: invalid value encountered in scalar divide
+    icc2 = (msb - mse) / (msb + (k - 1) * mse + k * (msj - mse) / n)
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:355: RuntimeWarning: invalid value encountered in scalar divide
+    icc3 = (msb - mse) / (msb + (k - 1) * mse)
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:356: RuntimeWarning: invalid value encountered in scalar divide
+    icc1k = (msb - msw) / msb
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:357: RuntimeWarning: invalid value encountered in scalar divide
+    icc2k = (msb - mse) / (msb + (msj - mse) / n)
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:358: RuntimeWarning: invalid value encountered in scalar divide
+    icc3k = (msb - mse) / msb
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:361: RuntimeWarning: invalid value encountered in scalar divide
+    f1k = msb / msw
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:366: RuntimeWarning: invalid value encountered in scalar divide
+    f2k = f3k = msb / mse
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/pingouin/reliability.py:394: RuntimeWarning: invalid value encountered in scalar divide
+    fj = msj / mse
+
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_run_analysis_uses_widget_parameters
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+tests/test_apptest_da.py::test_step_3_descriptive_table_has_no_raw_column_names
+  /var/home/Lukas/Projects/RATA-Flow-App/stats/panel_performance.py:362: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+    r, p = stats.pearsonr(sub['intensity'], sub['consensus'])
+
+tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules
+tests/test_apptest_rata.py::test_rendered_conventions_follow_the_house_rules
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/numpy/_core/_methods.py:219: RuntimeWarning: Degrees of freedom <= 0 for slice
+    ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+
+tests/test_apptest_da.py::test_rendered_conventions_follow_the_house_rules
+tests/test_apptest_rata.py::test_rendered_conventions_follow_the_house_rules
+  /var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/numpy/_core/_methods.py:211: RuntimeWarning: invalid value encountered in scalar divide
+    ret = ret.dtype.type(ret / rcount)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html

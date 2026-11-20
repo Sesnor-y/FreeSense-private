@@ -1,0 +1,11 @@
+    fit_pls Y=external(8) loo perm=1000: 6.97s
+    coef_stability Y=external(8) loo: 0.01s
+    fit_pls Y=external(8) kfold_5 perm=1000: 6.90s
+    coef_stability Y=external(8) kfold_5: 0.00s
+    fit_pls Y=consumers(300) loo perm=1000: 9.37s
+    coef_stability Y=consumers(300) loo: 0.01s
+    fit_pls Y=consumers(300) kfold_5 perm=1000: 9.10s
+    coef_stability Y=consumers(300) kfold_5: 0.00s
+    compute_prefmap (300 consumers): 0.08s
+    compute_preference_surface grid 50: 0.01s
+FUSION prod=12 sens=30 cons=300

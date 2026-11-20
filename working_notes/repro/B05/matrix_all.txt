@@ -1,0 +1,96 @@
+stats/cata.py::run_cata_contrast L59 tests=2 {'STRUCT': 2} direct=0
+stats/cata.py::cached_run_cata_contrast L292 tests=2 {'STRUCT': 2} direct=0
+stats/cata.py::compute_ca L370 tests=4 {'STRUCT': 2, 'REF': 1, 'NUM': 1} direct=1
+stats/cata.py::cached_compute_ca L556 tests=2 {'STRUCT': 2} direct=0
+stats/cata.py::compute_ca_ellipses L755 tests=2 {'STRUCT': 2} direct=0
+stats/cata.py::summarise_liking_overlap L955 tests=2 {'STRUCT': 1, 'NUM': 1} direct=0
+stats/cata.py::compute_penalty L1059 tests=2 {'STRUCT': 1, 'NUM': 1} direct=0
+stats/cata.py::reassign_penalty_quadrants L1444 tests=2 {'STRUCT': 1, 'NUM': 1} direct=0
+stats/cata.py::cached_compute_penalty L1484 tests=2 {'STRUCT': 1, 'NUM': 1} direct=0
+stats/contrast.py::compute_contrast L53 tests=10 {'STRUCT': 9, 'NUM': 1} direct=1
+stats/contrast.py::cached_compute_contrast L752 tests=5 {'STRUCT': 3, 'NUM': 2} direct=1
+stats/da_anova.py::run_da_anova L121 tests=10 {'NUM': 4, 'REF': 1, 'STRUCT': 5} direct=5
+stats/da_anova.py::compute_da_diagnostics L493 tests=2 {'STRUCT': 2} direct=0
+stats/data_fusion.py::match_samples L41 tests=4 {'STRUCT': 2, 'NUM': 2} direct=0
+stats/data_fusion.py::merge_data_blocks L228 tests=3 {'STRUCT': 2, 'NUM': 1} direct=1
+stats/data_fusion.py::drop_incomplete_attributes L466 tests=4 {'STRUCT': 3, 'NUM': 1} direct=1
+stats/data_fusion.py::log_transform L481 tests=0 {} direct=0
+stats/data_fusion.py::sqrt_transform L506 tests=0 {} direct=0
+stats/data_fusion.py::project_supplementary L528 tests=1 {'STRUCT': 1} direct=0
+stats/data_fusion.py::autoscale L587 tests=5 {'NUM': 2, 'STRUCT': 2, 'REF': 1} direct=7
+stats/data_fusion.py::inverse_autoscale L611 tests=0 {} direct=0
+stats/descriptive.py::calculate_descriptives L44 tests=6 {'STRUCT': 3, 'NUM': 2, 'REF': 1} direct=4
+stats/descriptive.py::calculate_da_descriptives L100 tests=7 {'NUM': 3, 'REF': 1, 'STRUCT': 3} direct=2
+stats/descriptive.py::calculate_attribute_correlations L142 tests=5 {'STRUCT': 3, 'NUM': 2} direct=1
+stats/jar_penalty.py::compute_jar_penalty L201 tests=3 {'NUM': 1, 'STRUCT': 1, 'REF': 1} direct=0
+stats/jar_penalty.py::compute_jar_penalty_long L359 tests=2 {'NUM': 1, 'STRUCT': 1} direct=0
+stats/jar_penalty.py::compute_jar_distribution L443 tests=2 {'NUM': 1, 'STRUCT': 1} direct=0
+stats/liking.py::compute_liking_lmm L111 tests=5 {'STRUCT': 2, 'NUM': 2, 'REF': 1} direct=1
+stats/liking.py::filter_sparse_demographic_levels L549 tests=2 {'NUM': 2} direct=5
+stats/liking.py::demographic_pearson_by_product L571 tests=3 {'NUM': 2, 'STRUCT': 1} direct=3
+stats/liking.py::demographic_anova_by_product L593 tests=2 {'NUM': 2} direct=3
+stats/liking.py::demographic_expected_cell_sizes L637 tests=2 {'STRUCT': 2} direct=3
+stats/liking.py::acceptance_share L664 tests=3 {'NUM': 2, 'STRUCT': 1} direct=3
+stats/liking.py::compute_liking_cld L705 tests=5 {'STRUCT': 2, 'NOASSERT': 1, 'NUM': 1, 'REF': 1} direct=1
+stats/liking.py::compute_demographic_overview L867 tests=1 {'NUM': 1} direct=0
+stats/liking.py::compute_twoway_anova_demo L952 tests=1 {'NUM': 1} direct=0
+stats/mdpref.py::compute_preference_map L14 tests=1 {'REF': 1} direct=1
+stats/mixed_models.py::run_mixed_models L13 tests=7 {'NUM': 2, 'STRUCT': 4, 'REF': 1} direct=2
+stats/multivariate.py::compute_pca_scores L15 tests=4 {'STRUCT': 3, 'NUM': 1} direct=5
+stats/multivariate.py::incomplete_mean_attributes L87 tests=4 {'STRUCT': 4} direct=1
+stats/multivariate.py::calculate_pca L97 tests=4 {'STRUCT': 4} direct=1
+stats/multivariate.py::run_cva L163 tests=4 {'STRUCT': 4} direct=1
+stats/multivariate.py::calculate_panel_stability L224 tests=4 {'STRUCT': 4} direct=1
+stats/panel_performance.py::compute_discrimination L35 tests=5 {'STRUCT': 3, 'NUM': 2} direct=0
+stats/panel_performance.py::compute_repeatability L143 tests=6 {'REF': 1, 'STRUCT': 3, 'NUM': 2} direct=0
+stats/panel_performance.py::compute_agreement L282 tests=5 {'STRUCT': 3, 'NUM': 2} direct=4
+stats/panel_performance.py::compute_scale_usage L431 tests=5 {'STRUCT': 3, 'NUM': 2} direct=0
+stats/panel_performance.py::guideline_band L660 tests=3 {'STRUCT': 3} direct=0
+stats/panel_performance.py::evaluated_attributes L671 tests=6 {'STRUCT': 5, 'NUM': 1} direct=0
+stats/panel_performance.py::compute_pooled_discrimination L690 tests=6 {'STRUCT': 5, 'NUM': 1} direct=0
+stats/panel_performance.py::summarise_assessor_performance L798 tests=7 {'STRUCT': 6, 'NUM': 1} direct=2
+stats/panel_performance.py::summarise_panel_performance L923 tests=4 {'STRUCT': 3, 'NUM': 1} direct=1
+stats/panel_performance.py::assessor_attribute_detail L976 tests=1 {'STRUCT': 1} direct=0
+stats/pls.py::compute_vip L37 tests=5 {'NUM': 2, 'STRUCT': 2, 'REF': 1} direct=0
+stats/pls.py::compute_correlation_loadings L81 tests=5 {'NUM': 2, 'STRUCT': 2, 'REF': 1} direct=0
+stats/pls.py::hotelling_t2_limit L133 tests=4 {'STRUCT': 1, 'NUM': 3} direct=5
+stats/pls.py::effective_rank L181 tests=5 {'NUM': 2, 'STRUCT': 2, 'REF': 1} direct=8
+stats/pls.py::fit_pls L660 tests=6 {'NUM': 2, 'STRUCT': 3, 'REF': 1} direct=7
+stats/pls.py::compute_cv_coefficient_stability L994 tests=2 {'STRUCT': 1, 'NUM': 1} direct=0
+stats/posthoc.py::resolve_da_error_term L95 tests=7 {'REF': 1, 'STRUCT': 4, 'NUM': 2} direct=0
+stats/posthoc.py::generate_cld L262 tests=18 {'STRUCT': 13, 'REF': 1, 'NUM': 4} direct=3
+stats/posthoc.py::generate_pairwise_table L534 tests=10 {'NUM': 4, 'STRUCT': 5, 'REF': 1} direct=2
+stats/prefmap.py::compute_prefmap L32 tests=6 {'REF': 1, 'NUM': 3, 'STRUCT': 1, 'NOASSERT': 1} direct=4
+stats/prefmap.py::compute_preference_surface L340 tests=2 {'NUM': 2} direct=0
+stats/prefmap.py::summarise_preference_directions L480 tests=5 {'NUM': 3, 'STRUCT': 2} direct=4
+stats/segmentation.py::recut_clusters L96 tests=4 {'NUM': 3, 'STRUCT': 1} direct=3
+stats/segmentation.py::compute_ahc_clusters L143 tests=3 {'NUM': 1, 'STRUCT': 2} direct=5
+stats/segmentation.py::compute_kmeans_clusters L238 tests=2 {'STRUCT': 1, 'NUM': 1} direct=5
+stats/segmentation.py::compute_demographic_association L357 tests=0 {} direct=1
+stats/shared/frequency.py::run_cochrans_q L39 tests=9 {'NUM': 3, 'REF': 1, 'STRUCT': 5} direct=4
+stats/shared/frequency.py::compute_citation_disagreement L158 tests=6 {'STRUCT': 4, 'NUM': 2} direct=5
+stats/shared/frequency.py::build_citation_counts L221 tests=4 {'STRUCT': 2, 'NUM': 1, 'REF': 1} direct=0
+stats/shared/frequency.py::build_citation_matrix L253 tests=3 {'STRUCT': 1, 'NUM': 1, 'REF': 1} direct=1
+stats/shared/frequency.py::proportion_table L289 tests=0 {} direct=0
+stats/shared/frequency.py::wilson_ci L312 tests=2 {'STRUCT': 2} direct=0
+stats/shared/frequency.py::filter_attributes_by_citation L358 tests=3 {'STRUCT': 1, 'NUM': 1, 'REF': 1} direct=1
+stats/shared/frequency.py::run_mcnemar_posthoc L492 tests=5 {'NUM': 1, 'REF': 1, 'STRUCT': 3} direct=2
+stats/shared/frequency.py::build_cld_from_mcnemar L634 tests=2 {'STRUCT': 1, 'NUM': 1} direct=0
+stats/shared/lsmeans.py::empty_cell_count L30 tests=9 {'REF': 2, 'STRUCT': 5, 'NUM': 2} direct=1
+stats/shared/lsmeans.py::additive_lsmeans L42 tests=3 {'NUM': 1, 'STRUCT': 2} direct=3
+stats/shared/lsmeans.py::pair_factor L101 tests=2 {'NUM': 1, 'STRUCT': 1} direct=2
+stats/shared/lsmeans.py::adjusted_summary_means L107 tests=12 {'NUM': 4, 'REF': 2, 'STRUCT': 6} direct=0
+core/data.py::load_data L8 tests=2 {'NOASSERT': 1, 'STRUCT': 1} direct=3
+core/data.py::load_precomputed_means L41 tests=0 {} direct=0
+core/data.py::clean_and_structure_data L138 tests=16 {'REF': 2, 'STRUCT': 7, 'NUM': 7} direct=7
+core/data.py::build_cata_liking_long L231 tests=2 {'STRUCT': 1, 'NUM': 1} direct=1
+utils/export.py::build_rata_results_table L145 tests=5 {'STRUCT': 4, 'NUM': 1} direct=1
+utils/export.py::build_run_parameters_sheet L334 tests=12 {'NUM': 6, 'STRUCT': 6} direct=0
+utils/export.py::generate_da_excel_report L631 tests=2 {'NUM': 2} direct=2
+utils/export.py::generate_excel_report L829 tests=5 {'STRUCT': 3, 'NUM': 2} direct=9
+utils/export.py::generate_liking_excel_report L1028 tests=2 {'NUM': 1, 'STRUCT': 1} direct=2
+utils/export.py::get_liking_export_sheet_list L1636 tests=1 {'STRUCT': 1} direct=0
+utils/export.py::generate_fusion_excel_report L1664 tests=2 {'STRUCT': 2} direct=2
+utils/export.py::generate_prefmap_excel_report L1935 tests=1 {'NUM': 1} direct=1
+utils/export.py::generate_cata_excel_report L2185 tests=1 {'NUM': 1} direct=1
+utils/export.py::get_cata_export_sheet_list L2570 tests=1 {'STRUCT': 1} direct=0

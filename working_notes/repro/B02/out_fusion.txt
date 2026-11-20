@@ -1,0 +1,26 @@
+[senso] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1
+[ext] exc=0 err=0 warn=0 info=0 charts=0 dfs=5 step=1
+[direction] exc=0 err=0 warn=0 info=0 charts=0 dfs=5 step=1
+[confirmed] exc=0 err=0 warn=0 info=0 charts=0 dfs=6 step=1
+--- Fusion step 2 '2. Exploratory overlay (PCA)' (0.3s)
+[Fusion-2] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=2
+--- Fusion step 3 '3. PLS model building' (0.0s)
+[Fusion-3] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=3
+--- Fusion step 4 '4. Model inspection' (0.0s)
+[Fusion-4] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=4
+  WARNING: Please complete the **3. PLS Model Building** step before proceeding.
+  EXPORT Fusion: 18496 bytes, sheets=['Analysis_Info', 'Sensory_Means', 'Match_Table', 'PCA_Scores', 'PCA_Loadings', 'Raw_Data', 'Run_Parameters']
+--- Fusion step 5 '5. Results & export' (0.1s)
+[Fusion-5] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=5
+[pls fit] exc=0 err=0 warn=0 info=0 charts=5 dfs=2 step=3
+--- Fusion step 3 '3. PLS model building' (0.1s)
+[post-fit Fusion-3] exc=0 err=0 warn=0 info=0 charts=5 dfs=2 step=3
+--- Fusion step 4 '4. Model inspection' (0.2s)
+[post-fit Fusion-4] exc=0 err=0 warn=0 info=0 charts=7 dfs=1 step=4
+  EXPORT Fusion: 26598 bytes, sheets=['Analysis_Info', 'Sensory_Means', 'Match_Table', 'PCA_Scores', 'PCA_Loadings', 'Model_Quality', 'Per_Y_Q2', 'Coefficients', 'VIP_Scores', 'PLS_Scores', 'PLS_Loadings', 'Iteration_History', 'Raw_Data', 'Run_Parameters']
+--- Fusion step 5 '5. Results & export' (0.2s)
+[post-fit Fusion-5] exc=0 err=0 warn=0 info=0 charts=0 dfs=1 step=5
+[ext=long liking] exc=0 err=1 warn=0 info=0 charts=0 dfs=5 step=1
+  ERROR: Different number of products: sensory (16) vs external (1600). Unmatched products will be excluded.
+[liking direction w/ long file] exc=0 err=1 warn=0 info=0 charts=0 dfs=5 step=1
+  ERROR: Different number of products: sensory (16) vs external (1600). Unmatched products will be excluded.

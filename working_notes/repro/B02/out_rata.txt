@@ -1,0 +1,186 @@
+2026-09-26 21:21:48.871 Uncaught app execution
+Traceback (most recent call last):
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 909, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/app.py", line 88, in <module>
+    getattr(importlib.import_module(mod_path), fn_name)()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/modules/rata/ui.py", line 75, in render_module_content
+    STEP_RENDERERS[current_step]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/modules/rata/ui.py", line 427, in render_step_1
+    anova_df, diagnostics_dict = st_mm.run_mixed_models(df_long, col_map, alpha)
+                                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/caching/cache_utils.py", line 705, in __call__
+    return self._get_or_create_cached_value(args, kwargs, spinner_message)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/caching/cache_utils.py", line 761, in _get_or_create_cached_value
+    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/streamlit/runtime/caching/cache_utils.py", line 823, in _handle_cache_miss
+    computed_value = self._info.func(*func_args, **func_kwargs)
+  File "/var/home/Lukas/Projects/RATA-Flow-App/stats/mixed_models.py", line 60, in run_mixed_models
+    md_full = smf.mixedlm(
+        "intensity ~ C(Prod_Safe)", df_subset,
+        groups=df_subset["Assessor_Safe"]
+    )
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/statsmodels/regression/mixed_linear_model.py", line 1137, in from_formula
+    mod = super().from_formula(formula, data, *args, **kwargs)
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/statsmodels/base/model.py", line 210, in from_formula
+    tmp = handle_formula_data(data, None, formula, depth=eval_env, missing=missing)
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/statsmodels/formula/formulatools.py", line 70, in handle_formula_data
+    result = mgr.get_matrices(
+        formula,
+    ...<3 lines>...
+        na_action=na_action,
+    )
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/statsmodels/formula/_manager.py", line 533, in get_matrices
+    output = patsy.dmatrices(
+        formula, data, eval_env=_eval_env, return_type=return_type, **kwargs
+    )
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/highlevel.py", line 317, in dmatrices
+    (lhs, rhs) = _do_highlevel_design(
+                 ~~~~~~~~~~~~~~~~~~~~^
+        formula_like, data, eval_env, NA_action, return_type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/highlevel.py", line 166, in _do_highlevel_design
+    return build_design_matrices(
+        design_infos, data, NA_action=NA_action, return_type=return_type
+    )
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/build.py", line 983, in build_design_matrices
+    new_values = NA_action.handle_NA(values, is_NAs, origins)
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/missing.py", line 168, in handle_NA
+    return self._handle_NA_raise(values, is_NAs, origins)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/missing.py", line 177, in _handle_NA_raise
+    raise PatsyError("factor contains missing values", origin)
+patsy.PatsyError: factor contains missing values
+    intensity ~ C(Prod_Safe)
+                ^^^^^^^^^^^^
+
+########## RATA :: small.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 0.6s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=3 step=2
+--- RATA step 2 '2. Attribute usage' (0.0s)
+[RATA-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=3 step=2
+--- RATA step 3 '3. Product discrimination' (0.1s)
+[RATA-3] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=3
+--- RATA step 4 '4. Product profiling' (0.1s)
+[RATA-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=2 step=4
+--- RATA step 5 '5. Contrast analysis' (0.1s)
+[RATA-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- RATA step 6 '6. Product mapping' (0.1s)
+[RATA-6] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=6
+--- RATA step 7 '7. Diagnostics' (0.2s)
+[RATA-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=0 step=7
+  EXPORT RATA: 33787 bytes, sheets=['Results_Table', 'Descriptives_CLD', 'Means_Wide', 'TickingRate_Wide', 'TickingRatePerRep_Wide', 'LMM_ANOVA', 'PostHoc_Pairwise', 'CochransQ', 'Contrast Analysis', 'Raw_Data', 'Methods_Notes', 'Run_Parameters']
+--- RATA step 8 '8. Results & export' (0.3s)
+[RATA-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8
+
+########## RATA :: eu_comma_quoted.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=1 warn=0 info=0 charts=0 dfs=2 step=1
+  ERROR: 1 issue(s) prevent analysis:
+
+1. Text metadata detected in attributes: **CocoaA, MilkA, CocoaF**. Please add these to 'Exclude Metadata Columns'.
+  -> no run button
+
+########## RATA :: text_cells.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=1 info=0 charts=0 dfs=3 step=1
+  WARNING: **3 blank cells detected** across 1 attribute column. Blank cells are filled with **0** (treated as zero-intensity ratings). Verify this is correct for your data — a blank may indicate a missing observation rather than a genuine zero-intensity score.
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 0.3s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=3 step=2
+
+########## RATA :: dup_rows.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 0.4s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=3 step=2
+
+########## RATA :: nan_product.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=2 info=0 charts=0 dfs=2 step=1
+  WARNING: Unbalanced design detected: The number of assessors varies per product (Min: 1, Max: 12). The Linear Mixed Models will automatically handle this.
+  WARNING: Unbalanced replication: replicates per assessor × product range from 1 to 3. Cell means will have unequal precision; the analysis treats them as equally precise.
+  metric Assessors=12
+  metric Products=5
+  metric Attributes=5
+  metric Replicates=2
+  run 0.3s
+[ran] exc=1 err=0 warn=2 info=0 charts=0 dfs=2 step=1
+  EXCEPTION: factor contains missing values
+    intensity ~ C(Prod_Safe)
+                ^^^^^^^^^^^^ | factor contains missing values
+    intensity ~ C(Prod_Safe)
+                ^^^^^^^^^^^^
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/statsmodels/formula/_manager.py", line 533, in get_matrices
+    output = patsy.dmatrices(
+        formula, data, eval_env=_eval_env, return_type=return_type, **kwargs
+    )
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/highlevel.py", line 317, in dmatrices
+    (lhs, rhs) = _do_highlevel_design(
+                 ~~~~~~~~~~~~~~~~~~~~^
+        formula_like, data, eval_env, NA_action, return_type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/highlevel.py", line 166, in _do_highlevel_design
+    return build_design_matrices(
+        design_infos, data, NA_action=NA_action, return_type=return_type
+    )
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/build.py", line 983, in build_design_matrices
+    new_values = NA_action.handle_NA(values, is_NAs, origins)
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/missing.py", line 168, in handle_NA
+    return self._handle_NA_raise(values, is_NAs, origins)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/var/home/Lukas/Projects/RATA-Flow-App/env/lib64/python3.14/site-packages/patsy/missing.py", line 177, in _handle_NA_raise
+    raise PatsyError("factor contains missing values", origin)
+  WARNING: Unbalanced design detected: The number of assessors varies per product (Min: 1, Max: 12). The Linear Mixed Models will automatically handle this.
+  WARNING: Unbalanced replication: replicates per assessor × product range from 1 to 3. Cell means will have unequal precision; the analysis treats them as equally precise.
+
+########## RATA :: special_levels.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 0.4s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=3 step=2
+
+########## RATA :: var_products.csv
+[upload] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  options: ['Select…', 'Panelist', 'Session', 'Product', 'CocoaA', 'MilkA', 'CocoaF', 'MilkF', 'Caramel']
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  metric Assessors=12
+  metric Products=4
+  metric Attributes=5
+  metric Replicates=2
+  run 0.4s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=3 step=2

@@ -1,0 +1,69 @@
+
+######## CATA :: bread.xlsx
+[upload] exc=0 err=0 warn=0 info=1 charts=0 dfs=2 step=1
+  INFO: Map both consumer and product columns to continue.
+[mapped] exc=0 err=1 warn=0 info=1 charts=0 dfs=2 step=1
+  ERROR: **Attribute columns contain values greater than 1.** CATA data should be binary (0/1). If your data contains intensity ratings, use the **RATA module** instead. Any non-binary columns (e.g. liking scores, free-text comments) should be excluded from the analysis.
+  INFO: Designate it as the overall-liking column above, exclude it from the analysis, or switch to the RATA module for intensity data.
+[liking set] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  run 1.3s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=1 step=2
+--- CATA step 2 '2. Attribute frequency' (0.0s)
+[CATA-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=1 step=2
+--- CATA step 3 '3. Product discrimination' (0.1s)
+[CATA-3] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=3
+--- CATA step 4 '4. Product profiles' (0.1s)
+[CATA-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=4
+--- CATA step 5 '5. Contrast analysis' (1.2s)
+[CATA-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- CATA step 6 '6. Correspondence analysis' (0.1s)
+[CATA-6] exc=0 err=0 warn=0 info=0 charts=2 dfs=4 step=6
+--- CATA step 7 '7. Penalty analysis' (0.2s)
+[CATA-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=7
+  EXPORT CATA: 681147 bytes, sheets=['Citation_Proportions', 'Citation_Counts', 'Cochrans_Q', 'McNemar_Pairwise', 'CLD_Summary', 'Contrast_Analysis', 'CA_Coordinates', 'Penalty_Analysis', 'Raw_Data', 'Methods_Notes', 'Run_Parameters']
+--- CATA step 8 '8. Results & export' (2.6s)
+[CATA-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8
+
+######## CATA :: squashes.xlsx
+[upload] exc=0 err=0 warn=0 info=1 charts=0 dfs=2 step=1
+  INFO: Map both consumer and product columns to continue.
+[mapped] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  run 3.6s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=1 step=2
+
+######## CATA :: bread_text.csv
+[upload] exc=0 err=0 warn=0 info=1 charts=0 dfs=2 step=1
+  INFO: Map both consumer and product columns to continue.
+[mapped] exc=0 err=1 warn=0 info=1 charts=0 dfs=2 step=1
+  ERROR: **Attribute columns contain values greater than 1.** CATA data should be binary (0/1). If your data contains intensity ratings, use the **RATA module** instead. Any non-binary columns (e.g. liking scores, free-text comments) should be excluded from the analysis.
+  INFO: Designate it as the overall-liking column above, exclude it from the analysis, or switch to the RATA module for intensity data.
+[liking set] exc=0 err=0 warn=1 info=0 charts=0 dfs=2 step=1
+  WARNING: **2 blank cells detected** across 1 attribute column(s). Missing values will be excluded from pairwise tests rather than treated as non-citations.
+  run 1.1s
+[ran] exc=0 err=0 warn=1 info=0 charts=1 dfs=1 step=2
+  WARNING: Cochran's Q: 2 of 161 assessor(s) with missing data excluded. Effective n = 159.
+
+######## CATA :: bread_special.csv
+[upload] exc=0 err=0 warn=0 info=1 charts=0 dfs=2 step=1
+  INFO: Map both consumer and product columns to continue.
+[mapped] exc=0 err=1 warn=0 info=1 charts=0 dfs=2 step=1
+  ERROR: **Attribute columns contain values greater than 1.** CATA data should be binary (0/1). If your data contains intensity ratings, use the **RATA module** instead. Any non-binary columns (e.g. liking scores, free-text comments) should be excluded from the analysis.
+  INFO: Designate it as the overall-liking column above, exclude it from the analysis, or switch to the RATA module for intensity data.
+[liking set] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+  run 1.1s
+[ran] exc=0 err=0 warn=0 info=0 charts=1 dfs=1 step=2
+--- CATA step 2 '2. Attribute frequency' (0.0s)
+[CATA-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=1 step=2
+--- CATA step 3 '3. Product discrimination' (0.1s)
+[CATA-3] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=3
+--- CATA step 4 '4. Product profiles' (0.1s)
+[CATA-4] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=4
+--- CATA step 5 '5. Contrast analysis' (1.2s)
+[CATA-5] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=5
+--- CATA step 6 '6. Correspondence analysis' (0.1s)
+[CATA-6] exc=0 err=0 warn=0 info=0 charts=2 dfs=4 step=6
+--- CATA step 7 '7. Penalty analysis' (0.1s)
+[CATA-7] exc=0 err=0 warn=0 info=0 charts=2 dfs=1 step=7
+  EXPORT CATA: 680383 bytes, sheets=['Citation_Proportions', 'Citation_Counts', 'Cochrans_Q', 'McNemar_Pairwise', 'CLD_Summary', 'Contrast_Analysis', 'CA_Coordinates', 'Penalty_Analysis', 'Raw_Data', 'Methods_Notes', 'Run_Parameters']
+--- CATA step 8 '8. Results & export' (2.7s)
+[CATA-8] exc=0 err=0 warn=0 info=0 charts=0 dfs=0 step=8

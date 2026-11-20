@@ -1,0 +1,11 @@
+pandas>=2.3.3,<3.0.0  # 2.3.3 is the first release with Python 3.14 wheels
+numpy>=2.3.2,<3.0.0   # first release with Python 3.14 wheels; older pins forced a source build on 3.14
+plotly>=5.24.0,<6.0.0
+kaleido==0.2.1  # server-side fig.to_image() for Word/PPT export presets; v0 API, pinned to plotly 5.x
+matplotlib>=3.9,<4.0
+statsmodels>=0.14.2,<1.0.0
+scipy>=1.13.0,<2.0.0
+scikit-learn>=1.5.0,<2.0.0
+openpyxl>=3.1.2,<4.0.0
+pingouin>=0.5.4,<1.0.0  # optional: ICC CIs in stats/panel_performance.py; app degrades gracefully without it
+rapidfuzz>=3.6.0,<4.0.0

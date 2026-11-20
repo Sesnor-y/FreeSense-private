@@ -1,0 +1,35 @@
+start maxRSS 262 MB
+  map assessor                                               0.01s  maxRSS=323 MB  exc=False
+  map product                                                0.01s  maxRSS=324 MB  exc=False
+  map replicate                                              0.02s  maxRSS=324 MB  exc=False
+  set scale max                                              0.02s  maxRSS=324 MB  exc=False
+  RUN FULL ANALYSIS (click + rerun)                         15.30s  maxRSS=343 MB  exc=False
+  visit 2. Product discrimination (first)                    0.10s  maxRSS=343 MB  exc=False
+  rerun 2. Product discrimination (no change)                0.04s  maxRSS=343 MB  exc=False
+  visit 3. Attribute overview (first)                        0.08s  maxRSS=345 MB  exc=False
+  rerun 3. Attribute overview (no change)                    0.07s  maxRSS=346 MB  exc=False
+  visit 4. Contrast analysis (first)                         1.14s  maxRSS=348 MB  exc=False
+  rerun 4. Contrast analysis (no change)                     0.09s  maxRSS=349 MB  exc=False
+  visit 5. Product mapping (first)                           0.19s  maxRSS=352 MB  exc=False
+  rerun 5. Product mapping (no change)                       0.17s  maxRSS=352 MB  exc=False
+  visit 6. Panel performance (first)                         2.64s  maxRSS=356 MB  exc=False
+  rerun 6. Panel performance (no change)                     0.03s  maxRSS=356 MB  exc=False
+  visit 7. Diagnostics (first)                               1.09s  maxRSS=362 MB  exc=False
+  rerun 7. Diagnostics (no change)                           0.05s  maxRSS=362 MB  exc=False
+  visit 8. Results & export (first)                          0.02s  maxRSS=362 MB  exc=False
+  rerun 8. Results & export (no change)                      0.02s  maxRSS=362 MB  exc=False
+  S5 interaction: PCA type -> Correlation                    0.17s  maxRSS=362 MB  exc=False
+  S5 interaction: PCA type -> Covariance (cached)            0.17s  maxRSS=362 MB  exc=False
+AttributeError: module '__main__' has no attribute '_Upload'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/claude-1000/-var-home-Lukas-Projects-RATA-Flow-App/9c9bcd14-2ca6-4847-a1b4-e4517d635af8/scratchpad/agents/B06/apptest_da.py", line 33, in <module>
+    sizes = sorted(((len(pickle.dumps(v, protocol=5)), k) for k, v in ss.items() if not k.startswith("$$")), reverse=True)
+  File "/tmp/claude-1000/-var-home-Lukas-Projects-RATA-Flow-App/9c9bcd14-2ca6-4847-a1b4-e4517d635af8/scratchpad/agents/B06/apptest_da.py", line 33, in <genexpr>
+    sizes = sorted(((len(pickle.dumps(v, protocol=5)), k) for k, v in ss.items() if not k.startswith("$$")), reverse=True)
+                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+_pickle.PicklingError: Can't pickle <class '__main__._Upload'>: it's not found as __main__._Upload
+when serializing _Upload class
+when serializing _Upload object

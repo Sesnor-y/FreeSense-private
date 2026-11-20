@@ -1,0 +1,49 @@
+2026-09-26 18:01:11.847 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:11.860 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:11.860 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:11.861 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.469 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.475 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.476 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.476 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.476 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.477 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.477 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.478 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.931 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.932 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:14.939 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:15.191 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:15.192 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:15.195 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:15.423 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:01:15.424 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-26 18:01:15.431 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+loaded (350, 17) {'Panelist': nan, 'Session': nan, 'Product': nan, 'CocoaA': nan, 'MilkA': nan, 'CocoaF': nan, 'MilkF': nan, 'Caramel': nan, 'Vanilla': nan, 'Sweetness': nan, 'Acidity': nan, 'Bitterness': nan, 'Astringency': nan, 'Crunchy': nan, 'Melting': nan, 'Sticky': nan, 'Granular': nan}
+errors: []
+warnings: ['**28 blank cells detected** across 14 attribute columns. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute\'s ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style dat']
+metrics: [('Assessors', '29'), ('Products', '6'), ('Attributes', '14'), ('Replicates', '2')]
+exc: ElementList()
+products: ['choc1', 'choc2', 'choc3', 'choc4', 'choc5', 'choc6', 'nan']
+assessors n: 30 has 'nan': True
+     attribute  F_product  df_product  df_error_term error_df_method     p_product significant tested_against  F_interaction  p_interaction interaction_significant  F_assessor    p_assessor  eta2p_product  empty_cells ss_type status
+3        MilkF     83.091         5.0          140.0           exact  3.740044e-40         Yes    Interaction          1.295       0.052831                     Yes       3.274  2.056968e-06          0.748            0     III     ok
+8   Bitterness     59.876         5.0          174.0           exact  4.842715e-36         Yes       Residual          1.200       0.126094                      No       4.179  2.396156e-09          0.632            0     III     ok
+10     Crunchy     52.165         5.0          174.0           exact  7.267848e-33         Yes       Residual          1.175       0.156413                      No       5.377  1.098174e-12          0.600            0     III     ok
+NANPRODUCT in da_df_long (4900, 6)
+NANPRODUCT in da_summary_df (98, 13)
+NANPRODUCT in da_rv_df (30, 5)
+NANPRODUCT in da_raw_df (350, 17)
+NANPRODUCT in da_cld_df (98, 3)
+da_summary_df 
+    Product    attribute  mean_intensity  std_intensity  n_assessors  min_intensity  max_intensity  median_intensity  raw_mean_intensity  mean_adjusted  se_intensity  ci95_lower  ci95_upper
+84     nan      Acidity             NaN            NaN            1            NaN            NaN               NaN                 NaN          False           NaN         NaN         NaN
+85     nan  Astringency             NaN            NaN            1            NaN            NaN               NaN                 NaN          False           NaN         NaN         NaN
+86     nan   Bitterness             NaN            NaN            1            NaN            NaN               NaN                 NaN          False           NaN         NaN         NaN
+87     nan      Caramel             NaN     
+da_cld_df 
+      attribute Product    cld
+6        MilkF     nan  abcde
+13  Bitterness     nan   abcd
+20     Crunchy     nan   abcd
+27      CocoaF     nan    abc

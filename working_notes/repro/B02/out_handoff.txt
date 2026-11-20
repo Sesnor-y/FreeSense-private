@@ -1,0 +1,27 @@
+DA complete True attrs 14
+[prefmap DA+liking] exc=0 err=0 warn=0 info=0 charts=0 dfs=3 step=1
+[fitted] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+fit type <class 'dict'>
+sensory means cols ['Acidity', 'Astringency', 'Bitterness', 'Caramel', 'CocoaA', 'CocoaF', 'Crunchy', 'Granular', 'Melting', 'MilkA', 'MilkF', 'Sticky', 'Sweetness', 'Vanilla']
+DA complete True attrs 9
+[prefmap step1 after DA rerun] exc=0 err=0 warn=0 info=0 charts=0 dfs=2 step=1
+sensory means cols now ['Acidity', 'Astringency', 'Bitterness', 'Crunchy', 'Granular', 'Melting', 'Sticky', 'Sweetness', 'Vanilla']
+fit still True complete True
+[prefmap step2 after DA rerun] exc=0 err=0 warn=1 info=1 charts=1 dfs=0 step=2
+  WARNING: Settings changed since the last run. Press **Fit PREFMAP models** to update.
+  INFO: Press **Fit PREFMAP models** to compute consumer preference vectors and enable the preference surface.
+[prefmap step3 after DA rerun] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=3
+  WARNING: Please complete the **2. External Preference Map** step before proceeding.
+[fusion DA source] exc=0 err=0 warn=0 info=0 charts=0 dfs=1 step=1
+--- Fusion step 2 '2. Exploratory overlay (PCA)' (0.0s)
+[Fusion-2] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=2
+  WARNING: Please configure your parameters and run the full analysis in the **1. Analysis Setup** step before proceeding.
+--- Fusion step 3 '3. PLS model building' (0.0s)
+[Fusion-3] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=3
+  WARNING: Please configure your parameters and run the full analysis in the **1. Analysis Setup** step before proceeding.
+--- Fusion step 4 '4. Model inspection' (0.0s)
+[Fusion-4] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=4
+  WARNING: Please complete the **3. PLS Model Building** step before proceeding.
+--- Fusion step 5 '5. Results & export' (0.0s)
+[Fusion-5] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=5
+  WARNING: Please complete the **2. Exploratory Overlay (PCA)** step before proceeding.

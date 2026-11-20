@@ -1,0 +1,22 @@
+[open] exc=0 err=0 warn=0 info=1 charts=0 dfs=2 step=1
+  INFO: Select both a sensory data source and a consumer preference source above to proceed.
+radios [('prefmap_sensory_radio', ['Use Descriptive Analysis results from this session', 'Use RATA results from this session', 'Upload pre-computed sensory means (CSV/xlsx)']), ('prefmap_consumer_radio', ['Use Liking module results from this session', 'Upload consumer preference vectors (PC1, PC2)', 'Upload raw consumer liking scores']), ('sidebar_nav_step', ['1. Data source selection', '2. External preference map', '3. Results & export']), ('ui_export_format', ['svg', 'png'])]
+[sensory uploaded] exc=0 err=0 warn=0 info=1 charts=0 dfs=4 step=1
+  INFO: Select both a sensory data source and a consumer preference source above to proceed.
+prod col product
+[long liking uploaded (shipped file)] exc=0 err=1 warn=0 info=0 charts=0 dfs=5 step=1
+  ERROR: Only 1 numeric consumer columns found. Expected at least 5 consumers. Check that columns represent individual consumers and the product column is correctly selected.
+[wide liking uploaded] exc=0 err=0 warn=0 info=0 charts=0 dfs=5 step=1
+--- PrefMap step 2 '2. External preference map' (0.1s)
+[PrefMap-2] exc=0 err=0 warn=0 info=1 charts=1 dfs=0 step=2
+  INFO: Press **Fit PREFMAP models** to compute consumer preference vectors and enable the preference surface.
+--- PrefMap step 3 '3. Results & export' (0.0s)
+[PrefMap-3] exc=0 err=0 warn=1 info=0 charts=0 dfs=0 step=3
+  WARNING: Please complete the **2. External Preference Map** step before proceeding.
+fit buttons []
+[fitted] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+--- PrefMap step 2 '2. External preference map' (0.1s)
+[post-fit PrefMap-2] exc=0 err=0 warn=0 info=0 charts=1 dfs=2 step=2
+  EXPORT PrefMap: 17661 bytes, sheets=['PrefMap_Summary', 'PrefMap_ConsumerVectors', 'PrefMap_SensoryLoadings', 'PrefMap_ClusterDrivers', 'PrefMap_ConsumerModels', 'Run_Parameters']
+--- PrefMap step 3 '3. Results & export' (0.1s)
+[post-fit PrefMap-3] exc=0 err=0 warn=0 info=0 charts=1 dfs=0 step=3

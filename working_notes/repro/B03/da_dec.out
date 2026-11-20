@@ -1,0 +1,33 @@
+2026-09-26 18:02:18.560 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:18.560 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:18.561 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:18.562 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.378 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.379 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.379 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.379 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.379 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.380 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.381 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.381 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.508 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.509 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.511 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.686 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.687 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.687 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.809 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-09-26 18:02:19.809 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-26 18:02:19.812 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+loaded (348, 17) ['7,5', '6', '8', '7', '8', '7', '6', '4', '5', '5', '4,5', '6']
+errors: []
+warnings: ['**35 blank cells detected** across 1 attribute column. By default the Descriptive module treats a blank as a **missing observation** — the row is excluded from that attribute\'s ANOVA and means (unbalanced designs are handled correctly). If your blanks mean *"attribute not present"* (RATA-style data ']
+metrics: [('Assessors', '29'), ('Products', '6'), ('Attributes', '14'), ('Replicates', '2')]
+exc: ElementList()
+products: ['choc1', 'choc2', 'choc3', 'choc4', 'choc5', 'choc6']
+assessors n: 29 has 'nan': False
+CocoaA intensity value counts head: {0.0: 1, 1.0: 5, 2.0: 12, 3.0: 15, 4.0: 26, 5.0: 41, 6.0: 54, 7.0: 61, 8.0: 55, 9.0: 36, 10.0: 7, nan: 35}
+     attribute  F_product  df_product  df_error_term error_df_method     p_product significant tested_against  F_interaction  p_interaction interaction_significant  F_assessor    p_assessor  eta2p_product  empty_cells ss_type status
+3        MilkF     83.091         5.0          140.0           exact  3.740044e-40         Yes    Interaction          1.295       0.052831                     Yes       3.274  2.056968e-06          0.748            0     III     ok
+8   Bitterness     59.876         5.0          174.0           exact  4.842715e-36         Yes       Residual          1.200       0.126094                      No       4.179  2.396156e-09          0.632            0     III     ok
+10     Crunchy     52.165         5.0          174.0           exact  7.267848e-33         Yes       Residual          1.175       0.156413                      No       5.377  1.098174e-12          0.600            0     III     ok

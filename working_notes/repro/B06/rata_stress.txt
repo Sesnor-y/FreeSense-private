@@ -1,0 +1,11 @@
+    clean_and_structure: 0.03s
+    descriptives: 0.09s
+    cochrans_q: 0.21s
+    citation_disagreement: 0.02s
+    run_mixed_models: 74.09s
+    generate_cld: 30.91s
+  TOTAL step1: 105.34s
+    [S6] calculate_pca: 0.02s
+    [S6] run_cva: 0.05s
+    [S7] panel_stability: 1.49s
+RATA (200, 12, 40) rows=2400 long=96000 converged=1.00
